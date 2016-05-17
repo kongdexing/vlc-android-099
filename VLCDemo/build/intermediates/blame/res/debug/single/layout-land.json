@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout-land\\equalizer.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\layout-land\\equalizer.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout-land\\player_remote_control.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\layout-land\\player_remote_control.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout-land\\media_info.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\layout-land\\media_info.xml"
+    }
+]

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\xml\\vlcwidget.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\xml\\vlcwidget.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\xml\\preferences.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\xml\\preferences.xml"
+    }
+]

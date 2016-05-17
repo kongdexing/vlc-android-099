@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\menu\\audio_list_browser.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\menu\\audio_list_browser.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\menu\\directory_view.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\menu\\directory_view.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\menu\\video_list.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\menu\\video_list.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\menu\\audio_player.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\menu\\audio_player.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\menu\\history_view.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\menu\\history_view.xml"
+    }
+]

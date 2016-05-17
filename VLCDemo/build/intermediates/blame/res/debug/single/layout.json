@@ -1,0 +1,346 @@
+[
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\browser_item.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\layout\\browser_item.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\player_remote_control.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\layout\\player_remote_control.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\browser.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\layout\\browser.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\vlcwidget.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\layout\\vlcwidget.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\audio_playlist_item_drag_shadow.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\layout\\audio_playlist_item_drag_shadow.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\audio_media_switcher_item.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\layout\\audio_media_switcher_item.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\video_grid.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\layout\\video_grid.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\player.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\layout\\player.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\audio_browser_separator.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\layout\\audio_browser_separator.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\info_dialog.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\layout\\info_dialog.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\media_info.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\layout\\media_info.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\list_item.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\layout\\list_item.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\notification_template_lines.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_action.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\notification_media_action.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\not_compatible.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\layout\\not_compatible.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\player_tips.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\layout\\player_tips.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\equalizer.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\layout\\equalizer.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\about_main.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\layout\\about_main.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\list_header.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\layout\\list_header.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\expandable_layout.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\layout\\expandable_layout.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\video_list_item.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\layout\\video_list_item.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\search.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\layout\\search.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\advanced_options.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\layout\\advanced_options.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\audio_browser.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\layout\\audio_browser.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\equalizer_bar.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\layout\\equalizer_bar.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\sidebar.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\layout\\sidebar.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\audio_player.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\layout\\audio_player.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\history_list.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\layout\\history_list.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\sidebar_item.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\layout\\sidebar_item.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\activity_my_player.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\layout\\activity_my_player.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\directory_view_item.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\layout\\directory_view_item.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\about.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\layout\\about.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\native_crash.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\layout\\native_crash.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\directory_view.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\layout\\directory_view.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\player_remote.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\layout\\player_remote.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\video_grid_item.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\layout\\video_grid_item.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\audio_playlist_item.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\layout\\audio_playlist_item.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\expandable_speed_selector.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\layout\\expandable_speed_selector.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\audio_player_tips.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\layout\\audio_player_tips.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\select_dialog_item_material.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\notification.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\layout\\notification.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_search_view.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\audio_albums_songs.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\layout\\audio_albums_songs.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media_narrow.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\expandable_jump_to_time.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\layout\\expandable_jump_to_time.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\notification_template_media.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\expandable_time_sleep.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\layout\\expandable_time_sleep.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\audio_playlist_tips.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\layout\\audio_playlist_tips.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\notification_template_big_media.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\debug_log.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\layout\\debug_log.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_screen_simple.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\about_licence.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\layout\\about_licence.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_screen_content_include.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\notification_expanded.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\layout\\notification_expanded.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\layout\\main.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_cancel_action.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\tab_layout.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\layout\\tab_layout.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\audio_browser_item.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\src\\main\\res\\layout\\audio_browser_item.xml"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\VLCDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_action_menu_layout.xml"
+    }
+]

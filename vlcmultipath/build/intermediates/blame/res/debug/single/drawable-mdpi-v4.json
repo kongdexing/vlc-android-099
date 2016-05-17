@@ -1,0 +1,666 @@
+[
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_cone_o.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_cone_o.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_play_circle_big_normal_o.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_play_circle_big_normal_o.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ic_search_api_mtrl_alpha.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-mdpi-v4\\abc_ic_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\img_tips_playlist.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\img_tips_playlist.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-mdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-mdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_move_media.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_move_media.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_menu_revert_wb.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_menu_revert_wb.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_subtitle_circle_normal.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_subtitle_circle_normal.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_jumpto_normal_w.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_jumpto_normal_w.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_list_selector_disabled_holo_light.9.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-mdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-mdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_stop_pressed_w.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_stop_pressed_w.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_repeat_one.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_repeat_one.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_more_normal.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_more_normal.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_list_focused_holo.9.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-mdpi-v4\\abc_list_focused_holo.9.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_menu_goto_wb.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_menu_goto_wb.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ic_star_half_black_16dp.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-mdpi-v4\\abc_ic_star_half_black_16dp.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_speed_normal_w.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_speed_normal_w.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_menu_video.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_menu_video.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_menu_refresh_wb.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_menu_refresh_wb.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_shuffle_normal_w.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_shuffle_normal_w.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_pause_normal.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_pause_normal.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\seekbar_thumb_normal.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\seekbar_thumb_normal.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_play_normal_w.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_play_normal_w.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_backward_pressed_w.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_backward_pressed_w.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_menu_goto.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_menu_goto.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_btn_check_to_on_mtrl_000.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-mdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_playlist_normal.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_playlist_normal.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_list_selector_disabled_holo_dark.9.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-mdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ic_star_black_16dp.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-mdpi-v4\\abc_ic_star_black_16dp.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_audio_circle_pressed_o.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_audio_circle_pressed_o.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_btn_rating_star_off_mtrl_alpha.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-mdpi-v4\\abc_btn_rating_star_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-mdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\seekbar_thumb_pressed.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\seekbar_thumb_pressed.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_pause_circle_big_normal_o.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_pause_circle_big_normal_o.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_play_normal.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_play_normal.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_menu_history_w.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_menu_history_w.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_play_pressed_w.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_play_pressed_w.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_btn_radio_to_on_mtrl_000.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-mdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_subtitle_circle_pressed_o.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_subtitle_circle_pressed_o.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_menu_video_w.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_menu_video_w.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_navmenu_circle_pressed_o.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_navmenu_circle_pressed_o.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-mdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_crop_circle_normal_o.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_crop_circle_normal_o.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_crop_circle_normal.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_crop_circle_normal.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_switch_track_mtrl_alpha.9.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-mdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_next_pressed.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_next_pressed.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_forward_normal_w.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_forward_normal_w.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_equalizer_normal.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_equalizer_normal.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_list_longpressed_holo.9.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-mdpi-v4\\abc_list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_menu_info_wb.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_menu_info_wb.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-mdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_stop_normal_w.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_stop_normal_w.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_menu_revert.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_menu_revert.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ic_ab_back_mtrl_am_alpha.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-mdpi-v4\\abc_ic_ab_back_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_play_pressed.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_play_pressed.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_pause_normal_w.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_pause_normal_w.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_play_circle_pressed.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_play_circle_pressed.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_down_w.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_down_w.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-mdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\icon.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\icon.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_menu_history.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_menu_history.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-mdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_gesture_finger_1.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_gesture_finger_1.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_textfield_default_mtrl_alpha.9.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-mdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_menu_audio.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_menu_audio.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_move_media_w.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_move_media_w.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_menu_preferences_wb.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_menu_preferences_wb.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_forward_pressed_w.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_forward_pressed_w.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_locked.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_locked.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_menu_equalizer.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_menu_equalizer.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_btn_check_to_on_mtrl_015.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-mdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_pause_pressed_w.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_pause_pressed_w.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\dots.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\dots.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_shuffle_normal.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_shuffle_normal.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_jumpto_normal.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_jumpto_normal.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_stop_normal.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_stop_normal.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_up.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_up.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_playlist_pressed.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_playlist_pressed.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_previous_pressed.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_previous_pressed.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_list_pressed_holo_dark.9.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-mdpi-v4\\abc_list_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_gesture_swipe_vertically.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_gesture_swipe_vertically.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-mdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_menu_overflow.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_menu_overflow.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_stop_pressed.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_stop_pressed.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_dots_circle_normal_o.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_dots_circle_normal_o.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_navmenu_circle_pressed.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_navmenu_circle_pressed.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-mdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_next_pressed_w.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_next_pressed_w.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_repeat_pressed.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_repeat_pressed.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_previous_normal.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_previous_normal.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ic_menu_moreoverflow_mtrl_alpha.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-mdpi-v4\\abc_ic_menu_moreoverflow_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_menu_info.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_menu_info.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_audio_circle_pressed.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_audio_circle_pressed.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_subtitle_circle_normal_o.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_subtitle_circle_normal_o.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_menu_folder.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_menu_folder.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_next_normal_w.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_next_normal_w.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_navmenu_circle_normal.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_navmenu_circle_normal.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_pause_circle_normal.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_pause_circle_normal.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-mdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_repeat_normal_w.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_repeat_normal_w.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_popup_background_mtrl_mult.9.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-mdpi-v4\\abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_crop_circle_pressed_o.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_crop_circle_pressed_o.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_menu_sortby.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_menu_sortby.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_shuffle_pressed.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_shuffle_pressed.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ic_star_half_black_36dp.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-mdpi-v4\\abc_ic_star_half_black_36dp.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_up_w.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_up_w.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_menu_preferences.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_menu_preferences.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ic_go_search_api_mtrl_alpha.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-mdpi-v4\\abc_ic_go_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_lock.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_lock.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_gesture_swipe_horizontally.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_gesture_swipe_horizontally.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_down.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_down.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-mdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_pause_circle_pressed.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_pause_circle_pressed.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_list_pressed_holo_light.9.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-mdpi-v4\\abc_list_pressed_holo_light.9.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_speed_normal.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_speed_normal.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ic_star_black_36dp.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-mdpi-v4\\abc_ic_star_black_36dp.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_menu_search_wb.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_menu_search_wb.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_gesture_finger_3.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_gesture_finger_3.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_play_circle_big_pressed_o.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_play_circle_big_pressed_o.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_menu_folder_w.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_menu_folder_w.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_audio_circle_normal.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_audio_circle_normal.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_repeat_normal.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_repeat_normal.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\dots_dark.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\dots_dark.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ic_menu_share_mtrl_alpha.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-mdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_navmenu_circle_normal_o.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_navmenu_circle_normal_o.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ic_clear_mtrl_alpha.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-mdpi-v4\\abc_ic_clear_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-mdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_sleep_normal.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_sleep_normal.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_list_divider_mtrl_alpha.9.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-mdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_menu_audio_w.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_menu_audio_w.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_menu_refresh.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_menu_refresh.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_spinner_mtrl_am_alpha.9.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-mdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_backward_normal_w.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_backward_normal_w.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-mdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_pause_circle_big_pressed_o.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_pause_circle_big_pressed_o.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_dots_circle_pressed_o.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_dots_circle_pressed_o.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_btn_radio_to_on_mtrl_015.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-mdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_more_pressed.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_more_pressed.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ic_voice_search_api_mtrl_alpha.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-mdpi-v4\\abc_ic_voice_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-mdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-mdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_sleep_normal_w.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_sleep_normal_w.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_menu_equalizer_wb.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_menu_equalizer_wb.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_menu_search.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_menu_search.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\icon_g.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\icon_g.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_gesture_finger_2.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_gesture_finger_2.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-mdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_play_circle_normal.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_play_circle_normal.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_next_normal.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_next_normal.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_pause_pressed.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_pause_pressed.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_previous_pressed_w.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_previous_pressed_w.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\background_cone.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\background_cone.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-mdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_audio_circle_normal_o.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_audio_circle_normal_o.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_previous_normal_w.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_previous_normal_w.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_btn_rating_star_on_mtrl_alpha.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-mdpi-v4\\abc_btn_rating_star_on_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_equalizer_normal_w.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_equalizer_normal_w.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_playlist_normal_w.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_playlist_normal_w.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_menu_sortby_wb.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_menu_sortby_wb.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_subtitle_circle_pressed.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_subtitle_circle_pressed.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_logo_w.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_logo_w.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_crop_circle_pressed.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\ic_crop_circle_pressed.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\img_tips_audioplayer.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\src\\main\\res\\drawable-mdpi\\img_tips_audioplayer.png"
+    },
+    {
+        "merged": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png",
+        "source": "F:\\ChinaEle\\AndroidDemo\\VLC\\vlcmultipath\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-mdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
+    }
+]
