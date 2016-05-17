@@ -1,11 +1,5 @@
 <component name="libraryTable">
   <library name="appcompat-v7-23.3.0">
-    <ANNOTATIONS>
-      <root url="jar://$PROJECT_DIR$/SlidingMenu/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/annotations.zip!/" />
-      <root url="jar://$PROJECT_DIR$/vlcmultipath/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/annotations.zip!/" />
-      <root url="jar://$PROJECT_DIR$/vlcmultipath/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/annotations.zip!/" />
-      <root url="jar://$PROJECT_DIR$/vlcmultipath/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/annotations.zip!/" />
-    </ANNOTATIONS>
     <CLASSES>
       <root url="file://$PROJECT_DIR$/SlidingMenu/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res" />
       <root url="jar://$PROJECT_DIR$/SlidingMenu/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/jars/classes.jar!/" />

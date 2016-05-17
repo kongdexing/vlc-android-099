@@ -342,8 +342,7 @@
         </activity>
 
         <activity android:name=".VideoPlayerMultiActivity"
-            android:configChanges="orientation|screenSize"
-            android:theme="@style/Theme.VLC.Fullscreen" >
+            android:configChanges="orientation|screenSize" >
             <!-- This filter captures protocols without type info -->
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />

@@ -150,7 +150,6 @@
     <style name="Theme.VLC.Fullscreen" parent="android:Theme.NoTitleBar.Fullscreen">
         <item name="android:windowBackground">@color/black</item>
         <item name="video_player_overlay">@color/transparent_gray</item>
-
         <item name="advanced_options_style">@style/Theme.VLC.AdvancedOptionsBlack</item>
     </style>
 
