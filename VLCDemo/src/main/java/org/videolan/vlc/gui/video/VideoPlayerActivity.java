@@ -261,7 +261,7 @@ public class VideoPlayerActivity extends Activity implements IVideoPlayer {
             };
             Log.d(TAG, "MediaRouter information : " + mMediaRouter  .toString());
         }
-
+        Log.i(TAG, "onCreate: ");
         mSettings = PreferenceManager.getDefaultSharedPreferences(this);
 
         /* Services and miscellaneous */

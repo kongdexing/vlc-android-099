@@ -227,6 +227,8 @@ public class VideoPlayerActivity extends Activity implements IVideoPlayer {
     private boolean mDisabledHardwareAcceleration = false;
     private int mPreviousHardwareAccelerationMode;
 
+    // Tips
+    private View mOverlayTips;
     private static final String PREF_TIPS_SHOWN = "video_player_tips_shown";
 
     // Navigation handling (DVD, Blu-Ray...)
@@ -364,16 +366,6 @@ public class VideoPlayerActivity extends Activity implements IVideoPlayer {
 
         mSwitchingView = false;
         mEndReached = false;
-
-        // Clear the resume time, since it is only used for resumes in external
-        // videos.
-//        Editor editor = mSettings.edit();
-//        editor.putLong(PreferencesActivity.VIDEO_RESUME_TIME, -1);
-//        // Also clear the subs list, because it is supposed to be per session
-//        // only (like desktop VLC). We don't want the customs subtitle file
-//        // to persist forever with this video.
-//        editor.putString(PreferencesActivity.VIDEO_SUBTITLE_FILES, null);
-//        editor.commit();
 
         IntentFilter filter = new IntentFilter();
         filter.addAction(Intent.ACTION_BATTERY_CHANGED);
@@ -1375,6 +1367,10 @@ public class VideoPlayerActivity extends Activity implements IVideoPlayer {
                     }
                     if(trackID < 0) return;
 
+//                    MediaDatabase.getInstance().updateMedia(
+//                            mLocation,
+//                            MediaDatabase.mediaColumn.MEDIA_AUDIOTRACK,
+//                            trackID);
                     mLibVLC.setAudioTrack(trackID);
                     dialog.dismiss();
                 }
@@ -1623,7 +1619,7 @@ public class VideoPlayerActivity extends Activity implements IVideoPlayer {
                 dimStatusBar(false);
             }
             mOverlayProgress.setVisibility(View.VISIBLE);
-//            if (mPresentation != null) mOverlayBackground.setVisibility(View.VISIBLE);
+            if (mPresentation != null) mOverlayBackground.setVisibility(View.VISIBLE);
         }
         Message msg = mHandler.obtainMessage(FADE_OUT);
         if (timeout != 0) {
@@ -1641,6 +1637,7 @@ public class VideoPlayerActivity extends Activity implements IVideoPlayer {
         if (mShowing) {
             mHandler.removeMessages(SHOW_PROGRESS);
             Log.i(TAG, "remove View!");
+            if (mOverlayTips != null) mOverlayTips.setVisibility(View.INVISIBLE);
             if (!fromUser && !mIsLocked) {
                 mOverlayHeader.startAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_out));
                 mOverlayOption.startAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_out));
@@ -1649,8 +1646,8 @@ public class VideoPlayerActivity extends Activity implements IVideoPlayer {
                 mMenu.startAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_out));
             }
             if (mPresentation != null) {
-//                mOverlayBackground.startAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_out));
-//                mOverlayBackground.setVisibility(View.INVISIBLE);
+                mOverlayBackground.startAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_out));
+                mOverlayBackground.setVisibility(View.INVISIBLE);
             }
             mOverlayHeader.setVisibility(View.INVISIBLE);
             mOverlayOption.setVisibility(View.INVISIBLE);
@@ -1702,11 +1699,11 @@ public class VideoPlayerActivity extends Activity implements IVideoPlayer {
         }
         int time = (int) mLibVLC.getTime();
         int length = (int) mLibVLC.getLength();
-        if (length == 0) {
+//        if (length == 0) {
 //            Media media = MediaDatabase.getInstance().getMedia(mLocation);
 //            if (media != null)
 //                length = (int) media.getLength();
-        }
+//        }
 
         // Update all view elements
         boolean isSeekable = mEnableJumpButtons && length > 0;
@@ -2235,6 +2232,17 @@ public class VideoPlayerActivity extends Activity implements IVideoPlayer {
         mLoading.setVisibility(View.INVISIBLE);
         mLoading.clearAnimation();
         mLoadingText.setVisibility(View.GONE);
+    }
+
+    public void onClickOverlayTips(View v) {
+        mOverlayTips.setVisibility(View.GONE);
+    }
+
+    public void onClickDismissTips(View v) {
+        mOverlayTips.setVisibility(View.GONE);
+        Editor editor = mSettings.edit();
+        editor.putBoolean(PREF_TIPS_SHOWN, true);
+        editor.commit();
     }
 
     private void updateNavStatus() {

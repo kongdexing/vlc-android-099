@@ -219,7 +219,7 @@ public class MediaLibrary {
             final MediaDatabase DBManager = MediaDatabase.getInstance();
 
             // show progressbar in footer
-            MainActivity.showProgressBar();
+//            MainActivity.showProgressBar();
 
             List<File> mediaDirs = DBManager.getMediaDirs();
             if (mediaDirs.size() == 0) {
@@ -302,8 +302,8 @@ public class MediaLibrary {
                 // Process the stacked items
                 for (File file : mediaToScan) {
                     String fileURI = LibVLC.PathToURI(file.getPath());
-                    MainActivity.sendTextInfo(file.getName(), count,
-                            mediaToScan.size());
+//                    MainActivity.sendTextInfo(file.getName(), count,
+//                            mediaToScan.size());
                     count++;
                     if (existingMedias.containsKey(fileURI)) {
                         /**
@@ -352,8 +352,8 @@ public class MediaLibrary {
                 }
 
                 // hide progressbar in footer
-                MainActivity.clearTextInfo();
-                MainActivity.hideProgressBar();
+//                MainActivity.clearTextInfo();
+//                MainActivity.hideProgressBar();
 
                 VideoGridFragment.actionScanStop();
 

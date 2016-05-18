@@ -1,18 +1,18 @@
 /*****************************************************************************
  * MainActivity.java
- *****************************************************************************
+ * ****************************************************************************
  * Copyright © 2011-2014 VLC authors and VideoLAN
- *
+ * <p>
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation; either version 2 of the License, or
  * (at your option) any later version.
- *
+ * <p>
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
- *
+ * <p>
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
@@ -20,79 +20,52 @@
 
 package org.videolan.vlc.gui;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-
-import org.videolan.libvlc.LibVlcException;
-import org.videolan.libvlc.LibVlcUtil;
-import org.videolan.vlc.MediaDatabase;
-import org.videolan.vlc.MediaLibrary;
-import org.videolan.vlc.R;
-import org.videolan.vlc.VLCApplication;
-import org.videolan.vlc.VLCCallbackTask;
-import org.videolan.vlc.audio.AudioService;
-import org.videolan.vlc.audio.AudioServiceController;
-import org.videolan.vlc.gui.SidebarAdapter.SidebarEntry;
-import org.videolan.vlc.gui.audio.AudioAlbumsSongsFragment;
-import org.videolan.vlc.gui.audio.AudioPlayer;
-import org.videolan.vlc.gui.audio.EqualizerFragment;
-import org.videolan.vlc.gui.video.MediaInfoFragment;
-import org.videolan.vlc.gui.video.VideoGridFragment;
-import org.videolan.vlc.gui.video.VideoListAdapter;
-import org.videolan.vlc.interfaces.IRefreshable;
-import org.videolan.vlc.interfaces.ISortable;
-import org.videolan.vlc.util.Util;
-import org.videolan.vlc.util.VLCInstance;
-import org.videolan.vlc.util.WeakHandler;
-import org.videolan.vlc.widget.SlidingPaneLayout;
-
 import android.annotation.TargetApi;
-import android.app.AlertDialog;
-import android.app.Dialog;
 import android.content.BroadcastReceiver;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.content.SharedPreferences;
-import android.content.SharedPreferences.Editor;
-import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.res.Configuration;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.preference.PreferenceManager;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
-import android.text.InputType;
 import android.util.Log;
 import android.view.Display;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
-import android.widget.Button;
-import android.widget.CheckBox;
-import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.ProgressBar;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
 
 import com.slidingmenu.lib.SlidingMenu;
+
+import org.videolan.libvlc.LibVlcException;
+import org.videolan.libvlc.LibVlcUtil;
+import org.videolan.vlc.MediaLibrary;
+import org.videolan.vlc.R;
+import org.videolan.vlc.audio.AudioService;
+import org.videolan.vlc.audio.AudioServiceController;
+import org.videolan.vlc.gui.audio.AudioAlbumsSongsFragment;
+import org.videolan.vlc.gui.audio.AudioPlayer;
+import org.videolan.vlc.gui.audio.EqualizerFragment;
+import org.videolan.vlc.gui.video.MediaInfoFragment;
+import org.videolan.vlc.gui.video.VideoGridFragment;
+import org.videolan.vlc.util.Util;
+import org.videolan.vlc.util.VLCInstance;
+import org.videolan.vlc.util.WeakHandler;
+import org.videolan.vlc.widget.SlidingPaneLayout;
+
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
 
 public class MainActivity extends ActionBarActivity {
     public final static String TAG = "VLC/MainActivity";
@@ -102,36 +75,18 @@ public class MainActivity extends ActionBarActivity {
     protected static final String ACTION_SHOW_TEXTINFO = "org.videolan.vlc.gui.ShowTextInfo";
     public static final String ACTION_SHOW_PLAYER = "org.videolan.vlc.gui.ShowPlayer";
 
-    private static final String PREF_SHOW_INFO = "show_info";
-    private static final String PREF_FIRST_RUN = "first_run";
-
-    private static final int ACTIVITY_RESULT_PREFERENCES = 1;
     private static final int ACTIVITY_SHOW_INFOLAYOUT = 2;
 
     private ActionBar mActionBar;
-    private SlidingMenu mMenu;
     private SidebarAdapter mSidebarAdapter;
-    private AudioPlayer mAudioPlayer;
-    private AudioServiceController mAudioController;
     private SlidingPaneLayout mSlidingPane;
-    private RelativeLayout mRootContainer;
 
-    private View mInfoLayout;
-    private ProgressBar mInfoProgress;
-    private TextView mInfoText;
-    private View mAudioPlayerFilling;
     private String mCurrentFragment;
     private String mPreviousFragment;
     private List<String> secondaryFragments = Arrays.asList("albumsSongs", "equalizer",
-                                                            "about", "search", "mediaInfo",
-                                                            "videoGroupList");
+            "about", "search", "mediaInfo",
+            "videoGroupList");
     private HashMap<String, Fragment> mSecondaryFragments = new HashMap<String, Fragment>();
-
-    private SharedPreferences mSettings;
-
-    private int mVersionNumber = -1;
-    private boolean mFirstRun = false;
-    private boolean mScanNeeded = true;
 
     private Handler mHandler = new MainActivityHandler(this);
 
@@ -142,27 +97,6 @@ public class MainActivity extends ActionBarActivity {
             finish();
             super.onCreate(savedInstanceState);
             return;
-        }
-
-        /* Get the current version from package */
-        PackageInfo pinfo = null;
-        try {
-            pinfo = getPackageManager().getPackageInfo(getPackageName(), 0);
-        } catch (NameNotFoundException e) {
-            Log.e(TAG, "package info not found.");
-        }
-        if (pinfo != null)
-            mVersionNumber = pinfo.versionCode;
-
-        /* Get settings */
-        mSettings = PreferenceManager.getDefaultSharedPreferences(this);
-
-        /* Check if it's the first run */
-        mFirstRun = mSettings.getInt(PREF_FIRST_RUN, -1) != mVersionNumber;
-        if (mFirstRun) {
-            Editor editor = mSettings.edit();
-            editor.putInt(PREF_FIRST_RUN, mVersionNumber);
-            editor.commit();
         }
 
         try {
@@ -182,111 +116,19 @@ public class MainActivity extends ActionBarActivity {
         /* Enable the indeterminate progress feature */
         requestWindowFeature(Window.FEATURE_INDETERMINATE_PROGRESS);
 
-        // Set up the sliding menu
-        mMenu = (SlidingMenu) LayoutInflater.from(this).inflate(R.layout.sliding_menu, null);
-        changeMenuOffset();
-
-        SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(this);
-        boolean enableBlackTheme = pref.getBoolean("enable_black_theme", false);
-        if (enableBlackTheme)
-            setTheme(R.style.Theme_VLC_Black);
-
         View v_main = LayoutInflater.from(this).inflate(R.layout.main, null);
         setContentView(v_main);
 
         mSlidingPane = (SlidingPaneLayout) v_main.findViewById(R.id.pane);
-        mSlidingPane.setPanelSlideListener(mPanelSlideListener);
 
         View sidebar = LayoutInflater.from(this).inflate(R.layout.sidebar, null);
-        final ListView listView = (ListView)sidebar.findViewById(android.R.id.list);
+        final ListView listView = (ListView) sidebar.findViewById(android.R.id.list);
         listView.setFooterDividersEnabled(true);
         mSidebarAdapter = new SidebarAdapter(this);
         listView.setAdapter(mSidebarAdapter);
-        mMenu.setMenu(sidebar);
-        mMenu.attachToActivity(this, SlidingMenu.SLIDING_CONTENT, true);
-
-        /* Initialize UI variables */
-        mInfoLayout = v_main.findViewById(R.id.info_layout);
-        mInfoProgress = (ProgressBar) v_main.findViewById(R.id.info_progress);
-        mInfoText = (TextView) v_main.findViewById(R.id.info_text);
-        mAudioPlayerFilling = v_main.findViewById(R.id.audio_player_filling);
-        mRootContainer = (RelativeLayout) v_main.findViewById(R.id.root_container);
 
         /* Set up the action bar */
         prepareActionBar();
-
-        /* Set up the sidebar click listener */
-        listView.setOnItemClickListener(new OnItemClickListener() {
-
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view,
-                    int position, long id) {
-                SidebarAdapter.SidebarEntry entry = (SidebarEntry) listView.getItemAtPosition(position);
-                Fragment current = getSupportFragmentManager().findFragmentById(R.id.fragment_placeholder);
-
-                if(current == null || (entry != null && current.getTag().equals(entry.id))) { /* Already selected */
-                    mMenu.showContent();
-                    return;
-                }
-
-                // This should not happen
-                if(entry == null || entry.id == null)
-                    return;
-
-                /*
-                 * Clear any backstack before switching tabs. This avoids
-                 * activating an old backstack, when a user hits the back button
-                 * to quit
-                 */
-                getSupportFragmentManager().popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
-
-                /* Slide down the audio player */
-                slideDownAudioPlayer();
-
-                /* Switch the fragment */
-                FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-                ft.replace(R.id.fragment_placeholder, getFragment(entry.id), entry.id);
-                ft.commit();
-                mCurrentFragment = entry.id;
-
-                /*
-                 * Set user visibility hints to work around weird Android
-                 * behaviour of duplicate context menu events.
-                 */
-                current.setUserVisibleHint(false);
-                getFragment(mCurrentFragment).setUserVisibleHint(true);
-                // HACK ALERT: Set underlying audio browser to be invisible too.
-                if(current.getTag().equals("tracks"))
-                    getFragment("audio").setUserVisibleHint(false);
-
-                mMenu.showContent();
-            }
-        });
-
-        /* Set up the audio player */
-        mAudioPlayer = new AudioPlayer();
-        mAudioController = AudioServiceController.getInstance();
-
-        getSupportFragmentManager().beginTransaction()
-            .replace(R.id.audio_player, mAudioPlayer)
-            .commit();
-
-        /* Show info/alpha/beta Warning */
-        if (mSettings.getInt(PREF_SHOW_INFO, -1) != mVersionNumber)
-            showInfoDialog();
-        else if (mFirstRun) {
-            /*
-             * The sliding menu is automatically opened when the user closes
-             * the info dialog. If (for any reason) the dialog is not shown,
-             * open the menu after a short delay.
-             */
-            mHandler.postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                    mMenu.showMenu();
-                }
-            }, 500);
-        }
 
         /* Prepare the progressBar */
         IntentFilter filter = new IntentFilter();
@@ -295,17 +137,6 @@ public class MainActivity extends ActionBarActivity {
         filter.addAction(ACTION_SHOW_TEXTINFO);
         filter.addAction(ACTION_SHOW_PLAYER);
         registerReceiver(messageReceiver, filter);
-
-        /* Reload the latest preferences */
-        reloadPreferences();
-    }
-
-    private void changeMenuOffset() {
-        WindowManager wm = (WindowManager) getSystemService(WINDOW_SERVICE);
-        Display display = wm.getDefaultDisplay();
-        @SuppressWarnings("deprecation")
-        int behindOffset_dp = Util.convertPxToDp(display.getWidth()) - 208;
-        mMenu.setBehindOffset(Util.convertDpToPx(behindOffset_dp));
     }
 
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
@@ -318,16 +149,11 @@ public class MainActivity extends ActionBarActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        mAudioController.addAudioPlayer(mAudioPlayer);
         AudioServiceController.getInstance().bindAudioService(this);
 
         /* FIXME: this is used to avoid having MainActivity twice in the backstack */
         if (getIntent().hasExtra(AudioService.START_FROM_NOTIFICATION))
             getIntent().removeExtra(AudioService.START_FROM_NOTIFICATION);
-
-        /* Load media items from database and storage */
-        if (mScanNeeded)
-            MediaLibrary.getInstance().loadMediaItems();
     }
 
     @Override
@@ -338,26 +164,26 @@ public class MainActivity extends ActionBarActivity {
         Fragment current = getSupportFragmentManager()
                 .findFragmentById(R.id.fragment_placeholder);
         boolean found = false;
-        if(current != null) {
+        if (current != null) {
             found = SidebarAdapter.sidebarFragments.contains(current.getTag());
         } else {
             found = true;
         }
 
-        for(int i = 0; i < SidebarAdapter.entries.size(); i++) {
+        for (int i = 0; i < SidebarAdapter.entries.size(); i++) {
             String fragmentTag = SidebarAdapter.entries.get(i).id;
             Fragment fragment = getSupportFragmentManager().findFragmentByTag(fragmentTag);
-            if(fragment != null) {
+            if (fragment != null) {
                 Log.d(TAG, "Restoring automatically recreated fragment \"" + fragmentTag + "\"");
                 mSidebarAdapter.restoreFragment(fragmentTag, fragment);
             }
         }
 
-        if(current == null || (!current.getTag().equals(mCurrentFragment) && found)) {
+        if (current == null || (!current.getTag().equals(mCurrentFragment) && found)) {
             Log.d(TAG, "Reloading displayed fragment");
-            if(mCurrentFragment == null || secondaryFragments.contains(mCurrentFragment))
+            if (mCurrentFragment == null || secondaryFragments.contains(mCurrentFragment))
                 mCurrentFragment = "video";
-            if(!SidebarAdapter.sidebarFragments.contains(mCurrentFragment)) {
+            if (!SidebarAdapter.sidebarFragments.contains(mCurrentFragment)) {
                 Log.d(TAG, "Unknown fragment \"" + mCurrentFragment + "\", resetting to video");
                 mCurrentFragment = "video";
             }
@@ -374,66 +200,29 @@ public class MainActivity extends ActionBarActivity {
     @Override
     protected void onPause() {
         super.onPause();
-
         /* Check for an ongoing scan that needs to be resumed during onResume */
-        mScanNeeded = MediaLibrary.getInstance().isWorking();
+//        mScanNeeded = MediaLibrary.getInstance().isWorking();
         /* Stop scanning for files */
         MediaLibrary.getInstance().stop();
-        /* Save the tab status in pref */
-        Editor editor = getSharedPreferences("MainActivity", MODE_PRIVATE).edit();
-        editor.putString("fragment", mCurrentFragment);
-        editor.commit();
-
-        mAudioController.removeAudioPlayer(mAudioPlayer);
         AudioServiceController.getInstance().unbindAudioService(this);
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-
         try {
             unregisterReceiver(messageReceiver);
-        } catch (IllegalArgumentException e) {}
-    }
-
-    @Override
-    protected void onRestart() {
-        super.onRestart();
-        /* Reload the latest preferences */
-        reloadPreferences();
-    }
-
-    @Override
-    public void onBackPressed() {
-        if(mMenu.isMenuShowing()) {
-            /* Close the menu first */
-            mMenu.showContent();
-            return;
+        } catch (IllegalArgumentException e) {
         }
-
-        // Slide down the audio player if it is shown entirely.
-        if (slideDownAudioPlayer())
-            return;
-
-        if (mCurrentFragment!= null) {
-            // If it's the albums songs fragment, we leave it.
-            if (secondaryFragments.contains(mCurrentFragment)) {
-                popSecondaryFragment();
-                return;
-            }
-        }
-        super.onBackPressed();
     }
 
-    private Fragment getFragment(String id)
-    {
+    private Fragment getFragment(String id) {
         return mSidebarAdapter.fetchFragment(id);
     }
 
     private static void ShowFragment(FragmentActivity activity, String tag, Fragment fragment) {
         if (fragment == null) {
-            Log.e(TAG, "Cannot show a null fragment, ShowFragment("+tag+") aborted.");
+            Log.e(TAG, "Cannot show a null fragment, ShowFragment(" + tag + ") aborted.");
             return;
         }
 
@@ -441,7 +230,7 @@ public class MainActivity extends ActionBarActivity {
 
         //abort if fragment is already the current one
         Fragment current = fm.findFragmentById(R.id.fragment_placeholder);
-        if(current != null && current.getTag().equals(tag))
+        if (current != null && current.getTag().equals(tag))
             return;
 
         //try to pop back if the fragment is already on the backstack
@@ -463,20 +252,19 @@ public class MainActivity extends ActionBarActivity {
      */
     public Fragment fetchSecondaryFragment(String id) {
         if (mSecondaryFragments.containsKey(id)
-            && mSecondaryFragments.get(id) != null)
+                && mSecondaryFragments.get(id) != null)
             return mSecondaryFragments.get(id);
 
         Fragment f;
         if (id.equals("albumsSongs")) {
             f = new AudioAlbumsSongsFragment();
-        } else if(id.equals("equalizer")) {
+        } else if (id.equals("equalizer")) {
             f = new EqualizerFragment();
-        } else if(id.equals("mediaInfo")) {
+        } else if (id.equals("mediaInfo")) {
             f = new MediaInfoFragment();
-        } else if(id.equals("videoGroupList")) {
+        } else if (id.equals("videoGroupList")) {
             f = new VideoGridFragment();
-        }
-        else {
+        } else {
             throw new IllegalArgumentException("Wrong fragment id.");
         }
         f.setRetainInstance(true);
@@ -515,28 +303,6 @@ public class MainActivity extends ActionBarActivity {
         mCurrentFragment = mPreviousFragment;
     }
 
-    /** Create menu from XML
-     */
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        /* Note: on Android 3.0+ with an action bar this method
-         * is called while the view is created. This can happen
-         * any time after onCreate.
-         */
-        return super.onCreateOptionsMenu(menu);
-    }
-
-    @Override
-    public boolean onPrepareOptionsMenu (Menu menu) {
-        return true;
-    }
-
-    @Override
-    public void onConfigurationChanged(Configuration newConfig) {
-        super.onConfigurationChanged(newConfig);
-        changeMenuOffset();
-    }
-
     /**
      * Handle onClick form menu buttons
      */
@@ -553,62 +319,11 @@ public class MainActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == ACTIVITY_RESULT_PREFERENCES) {
-            if (resultCode == PreferencesActivity.RESULT_RESCAN)
-                MediaLibrary.getInstance().loadMediaItems(this, true);
-            else if (resultCode == PreferencesActivity.RESULT_RESTART) {
-                Intent intent = getIntent();
-                finish();
-                startActivity(intent);
-            }
-        }
-    }
-
-    private void reloadPreferences() {
-        SharedPreferences sharedPrefs = getSharedPreferences("MainActivity", MODE_PRIVATE);
-        mCurrentFragment = sharedPrefs.getString("fragment", "video");
-    }
-
-    private void showInfoDialog() {
-        final Dialog infoDialog = new Dialog(this, R.style.info_dialog);
-        infoDialog.setContentView(R.layout.info_dialog);
-        Button okButton = (Button) infoDialog.findViewById(R.id.ok);
-        okButton.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                CheckBox notShowAgain =
-                        (CheckBox) infoDialog.findViewById(R.id.not_show_again);
-                if (notShowAgain.isChecked() && mSettings != null) {
-                    Editor editor = mSettings.edit();
-                    editor.putInt(PREF_SHOW_INFO, mVersionNumber);
-                    editor.commit();
-                }
-                /* Close the dialog */
-                infoDialog.dismiss();
-                /* and finally open the sliding menu if first run */
-                if (mFirstRun)
-                    mMenu.showMenu();
-            }
-        });
-        infoDialog.show();
-    }
-
-    /**
-     * onClick event from xml
-     * @param view
-     */
-    public void searchClick(View view) {
-        onSearchRequested();
-    }
-
     private final BroadcastReceiver messageReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
             String action = intent.getAction();
-
+            Log.i(TAG, "onReceive: action " + action);
             if (action.equalsIgnoreCase(ACTION_SHOW_PROGRESSBAR)) {
                 setSupportProgressBarIndeterminateVisibility(true);
                 getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
@@ -619,25 +334,12 @@ public class MainActivity extends ActionBarActivity {
                 String info = intent.getStringExtra("info");
                 int max = intent.getIntExtra("max", 0);
                 int progress = intent.getIntExtra("progress", 100);
-                mInfoText.setText(info);
-                mInfoProgress.setMax(max);
-                mInfoProgress.setProgress(progress);
+                Log.i(TAG, "onReceive: ACTION_SHOW_TEXTINFO info " + info + " max " + max + " progress " + progress);
 
                 if (info == null) {
                     /* Cancel any upcoming visibility change */
                     mHandler.removeMessages(ACTIVITY_SHOW_INFOLAYOUT);
-                    mInfoLayout.setVisibility(View.GONE);
                 }
-                else {
-                    /* Slightly delay the appearance of the progress bar to avoid unnecessary flickering */
-                    if (!mHandler.hasMessages(ACTIVITY_SHOW_INFOLAYOUT)) {
-                        Message m = new Message();
-                        m.what = ACTIVITY_SHOW_INFOLAYOUT;
-                        mHandler.sendMessageDelayed(m, 300);
-                    }
-                }
-            } else if (action.equalsIgnoreCase(ACTION_SHOW_PLAYER)) {
-                showAudioPlayer();
             }
         }
     };
@@ -649,50 +351,7 @@ public class MainActivity extends ActionBarActivity {
 
         @Override
         public void handleMessage(Message msg) {
-            MainActivity ma = getOwner();
-            if(ma == null) return;
-
-            switch (msg.what) {
-                case ACTIVITY_SHOW_INFOLAYOUT:
-                    ma.mInfoLayout.setVisibility(View.VISIBLE);
-                    break;
-            }
         }
-    };
-
-    public static void showProgressBar() {
-        Intent intent = new Intent();
-        intent.setAction(ACTION_SHOW_PROGRESSBAR);
-        VLCApplication.getAppContext().sendBroadcast(intent);
-    }
-
-    public static void hideProgressBar() {
-        Intent intent = new Intent();
-        intent.setAction(ACTION_HIDE_PROGRESSBAR);
-        VLCApplication.getAppContext().sendBroadcast(intent);
-    }
-
-    public static void sendTextInfo(String info, int progress, int max) {
-        Intent intent = new Intent();
-        intent.setAction(ACTION_SHOW_TEXTINFO);
-        intent.putExtra("info", info);
-        intent.putExtra("progress", progress);
-        intent.putExtra("max", max);
-        VLCApplication.getAppContext().sendBroadcast(intent);
-    }
-
-    public static void clearTextInfo() {
-        sendTextInfo(null, 0, 100);
-    }
-
-    /**
-     * Show the audio player.
-     */
-    public void showAudioPlayer() {
-        // Open the pane only if is entirely opened.
-        if (mSlidingPane.getState() == mSlidingPane.STATE_OPENED_ENTIRELY)
-            mSlidingPane.openPane();
-        mAudioPlayerFilling.setVisibility(View.VISIBLE);
     }
 
     /**
@@ -707,100 +366,4 @@ public class MainActivity extends ActionBarActivity {
         return false;
     }
 
-    /**
-     * Slide up and down the audio player depending on its current state.
-     */
-    public void slideUpOrDownAudioPlayer() {
-        if (mSlidingPane.getState() == mSlidingPane.STATE_CLOSED)
-            mSlidingPane.openPane();
-        else if (mSlidingPane.getState() == mSlidingPane.STATE_OPENED)
-            mSlidingPane.closePane();
-    }
-
-    /**
-     * Hide the audio player.
-     */
-    public void hideAudioPlayer() {
-        mSlidingPane.openPaneEntirely();
-        mAudioPlayerFilling.setVisibility(View.GONE);
-    }
-
-    private final SlidingPaneLayout.PanelSlideListener mPanelSlideListener
-        = new SlidingPaneLayout.PanelSlideListener() {
-
-            @Override
-            public void onPanelSlide(float slideOffset) {
-                if (slideOffset <= 0.1)
-                    getSupportActionBar().hide();
-                else
-                    getSupportActionBar().show();
-            }
-
-            @Override
-            public void onPanelOpened() {
-                int resId = Util.getResourceFromAttribute(MainActivity.this, R.attr.mini_player_top_shadow);
-                if (resId != 0)
-                    mSlidingPane.setShadowResource(resId);
-                mAudioPlayer.setHeaderVisibilities(false, false, true, true, true);
-                mMenu.setSlidingEnabled(true);
-                removeTipViewIfDisplayed();
-                mAudioPlayer.showAudioPlayerTips();
-            }
-
-            @Override
-            public void onPanelOpenedEntirely() {
-                mSlidingPane.setShadowDrawable(null);
-                mMenu.setSlidingEnabled(true);
-            }
-
-            @Override
-            public void onPanelClosed() {
-                mAudioPlayer.setHeaderVisibilities(true, true, false, false, false);
-                mMenu.setSlidingEnabled(false);
-                mAudioPlayer.showPlaylistTips();
-            }
-
-    };
-
-    /**
-     * Show a tip view.
-     * @param layoutId the layout of the tip view
-     * @param settingKey the setting key to check if the view must be displayed or not.
-     */
-    public void showTipViewIfNeeded(final int layoutId, final String settingKey) {
-        if (!mSettings.getBoolean(settingKey, false)) {
-            removeTipViewIfDisplayed();
-            View v = LayoutInflater.from(this).inflate(layoutId, null);
-            mRootContainer.addView(v,
-                    new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT,
-                            RelativeLayout.LayoutParams.MATCH_PARENT));
-
-            v.setOnClickListener(new OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    removeTipViewIfDisplayed();
-                }
-            });
-
-            TextView okGotIt = (TextView) v.findViewById(R.id.okgotit_button);
-            okGotIt.setOnClickListener(new OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    removeTipViewIfDisplayed();
-                    SharedPreferences settings = PreferenceManager.getDefaultSharedPreferences(MainActivity.this);
-                    Editor editor = settings.edit();
-                    editor.putBoolean(settingKey, true);
-                    editor.commit();
-                }
-            });
-        }
-    }
-
-    /**
-     * Remove the current tip view if there is one displayed.
-     */
-    public void removeTipViewIfDisplayed() {
-        if (mRootContainer.getChildCount() > 1)
-            mRootContainer.removeViewAt(1);
-    }
 }

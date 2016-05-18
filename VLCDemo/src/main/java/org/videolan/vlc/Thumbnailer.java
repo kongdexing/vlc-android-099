@@ -135,8 +135,8 @@ public class Thumbnailer implements Runnable {
             boolean interrupted = false;
             while (mItems.size() == 0) {
                 try {
-                    MainActivity.hideProgressBar();
-                    MainActivity.clearTextInfo();
+//                    MainActivity.hideProgressBar();
+//                    MainActivity.clearTextInfo();
                     totalCount = 0;
                     notEmpty.await();
                 } catch (InterruptedException e) {
@@ -153,9 +153,8 @@ public class Thumbnailer implements Runnable {
             Media item = mItems.poll();
             lock.unlock();
 
-            MainActivity.showProgressBar();
-
-            MainActivity.sendTextInfo(String.format("%s %s", mPrefix, item.getFileName()), count, total);
+//            MainActivity.showProgressBar();
+//            MainActivity.sendTextInfo(String.format("%s %s", mPrefix, item.getFileName()), count, total);
             count++;
 
             int width = (int) (120 * mDensity);
@@ -192,8 +191,8 @@ public class Thumbnailer implements Runnable {
             }
         }
         /* cleanup */
-        MainActivity.hideProgressBar();
-        MainActivity.clearTextInfo();
+//        MainActivity.hideProgressBar();
+//        MainActivity.clearTextInfo();
         mVideoGridFragment = null;
         Log.d(TAG, "Thumbnailer stopped");
     }

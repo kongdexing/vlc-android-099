@@ -483,12 +483,12 @@ public class AudioPlayer extends Fragment implements IAudioPlayer {
 
     public void show() {
         MainActivity activity = (MainActivity)getActivity();
-        activity.showAudioPlayer();
+//        activity.showAudioPlayer();
     }
 
     public void hide() {
         MainActivity activity = (MainActivity)getActivity();
-        activity.hideAudioPlayer();
+//        activity.hideAudioPlayer();
     }
 
     /**
@@ -549,7 +549,7 @@ public class AudioPlayer extends Fragment implements IAudioPlayer {
         @Override
         public void onTouchClick() {
             MainActivity activity = (MainActivity)getActivity();
-            activity.slideUpOrDownAudioPlayer();
+//            activity.slideUpOrDownAudioPlayer();
         }
     };
 
@@ -661,15 +661,4 @@ public class AudioPlayer extends Fragment implements IAudioPlayer {
         }
     }
 
-    public void showPlaylistTips() {
-        MainActivity activity = (MainActivity)getActivity();
-        if(activity != null)
-            activity.showTipViewIfNeeded(R.layout.audio_playlist_tips, PREF_PLAYLIST_TIPS_SHOWN);
-    }
-
-    public void showAudioPlayerTips() {
-        MainActivity activity = (MainActivity)getActivity();
-        if(activity != null)
-            activity.showTipViewIfNeeded(R.layout.audio_player_tips, PREF_AUDIOPLAYER_TIPS_SHOWN);
-    }
 }
