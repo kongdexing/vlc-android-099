@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.videolan.vlc">
+    package="org.videolan.vlc"
+    android:installLocation="auto"
+    android:versionCode="9900"
+    android:versionName="0.9.9" >
 
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    "
-    <!-- 设置允许改变配置信息的权限 -->
-    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="19" />
+
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
@@ -17,29 +19,42 @@
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
-        android:name=".VLCApplication"
+        android:name="org.videolan.vlc.VLCApplication"
+        android:debuggable="true"
         android:hardwareAccelerated="true"
         android:icon="@drawable/icon"
         android:label="@string/app_name"
         android:logo="@drawable/ic_logo_w"
-        android:theme="@style/Theme.VLC.NoTitleBar">
+        android:theme="@style/Theme.VLC.NoTitleBar" >
         <activity
             android:name=".gui.MainActivity"
             android:configChanges="orientation|screenSize"
             android:icon="@drawable/icon"
             android:label="@string/app_name"
             android:launchMode="singleTask"
-            android:theme="@style/Theme.VLC">
+            android:theme="@style/Theme.VLC" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".gui.CompatErrorActivity" />
+        <activity android:name=".gui.PreferencesActivity" />
+        <activity
+            android:name=".gui.BrowserActivity"
+            android:label="@string/mediafiles"
+            android:theme="@style/Theme.VLC.NoTitleBar" />
+        <activity android:name=".gui.DebugLogActivity" />
+        <activity
+            android:name=".gui.NativeCrashActivity"
+            android:process=":NativeCrashActivity"
+            android:stateNotNeeded="true"
+            android:theme="@style/Theme.VLC" />
         <activity
             android:name=".gui.video.VideoPlayerActivity"
             android:configChanges="orientation|screenSize"
-            android:theme="@style/Theme.VLC.Fullscreen">
+            android:theme="@style/Theme.VLC.Fullscreen" >
 
             <!-- This filter captures protocols without type info -->
             <intent-filter>
@@ -354,15 +369,30 @@
             </intent-filter>
         </activity>
 
-        <service android:name=".audio.AudioService" />
+        <service android:name="org.videolan.vlc.audio.AudioService" />
 
-        <receiver android:name=".PhoneStateReceiver">
+        <receiver android:name=".PhoneStateReceiver" >
             <intent-filter>
                 <action android:name="android.intent.action.PHONE_STATE" />
             </intent-filter>
         </receiver>
+        <receiver
+            android:name=".widget.VLCAppWidgetProvider"
+            android:exported="false"
+            android:label="VLC mini player" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
 
-        <activity android:name="org.videolan.android.ui.MyPlayerActivity"></activity>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/vlcwidget" />
+        </receiver>
+        <receiver android:name=".RemoteControlClientReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

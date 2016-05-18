@@ -101,6 +101,7 @@ public class VideoGridFragment extends SherlockGridFragment implements ISortable
     private VideoListAdapter mVideoAdapter;
     private MediaLibrary mMediaLibrary;
     private Thumbnailer mThumbnailer;
+    private VideoGridAnimator mAnimator;
 
     private AudioServiceController mAudioController;
 
@@ -155,6 +156,8 @@ public class VideoGridFragment extends SherlockGridFragment implements ISortable
         if (mMediaLibrary.isWorking()) {
             actionScanStart();
         }
+
+        mAnimator = new VideoGridAnimator(getGridView());
     }
 
     @Override
@@ -179,6 +182,7 @@ public class VideoGridFragment extends SherlockGridFragment implements ISortable
         mMediaLibrary.addUpdateHandler(mHandler);
         mGridView.setSelection(mGVFirstVisiblePos);
         updateViewMode();
+        mAnimator.animate();
 
         /* Start the thumbnailer */
         if (mThumbnailer != null)
@@ -263,14 +267,14 @@ public class VideoGridFragment extends SherlockGridFragment implements ISortable
     @Override
     public void onGridItemClick(GridView l, View v, int position, long id) {
         Media media = (Media) getListAdapter().getItem(position);
-//        if (media instanceof MediaGroup) {
-//            MainActivity activity = (MainActivity)getActivity();
-//            VideoGridFragment frag = (VideoGridFragment)activity.showSecondaryFragment("videoGroupList");
-//            if (frag != null) {
-//                frag.setGroup(media.getTitle());
-//            }
-//        }
-//        else
+        if (media instanceof MediaGroup) {
+            MainActivity activity = (MainActivity)getActivity();
+            VideoGridFragment frag = (VideoGridFragment)activity.showSecondaryFragment("videoGroupList");
+            if (frag != null) {
+                frag.setGroup(media.getTitle());
+            }
+        }
+        else
             playVideo(media, false);
         super.onGridItemClick(l, v, position, id);
     }
@@ -294,11 +298,11 @@ public class VideoGridFragment extends SherlockGridFragment implements ISortable
             playAudio(media);
             return true;
         case R.id.video_list_info:
-//            MainActivity activity = (MainActivity)getActivity();
-//            MediaInfoFragment frag = (MediaInfoFragment)activity.showSecondaryFragment("mediaInfo");
-//            if (frag != null) {
-//                frag.setMediaLocation(media.getLocation());
-//            }
+            MainActivity activity = (MainActivity)getActivity();
+            MediaInfoFragment frag = (MediaInfoFragment)activity.showSecondaryFragment("mediaInfo");
+            if (frag != null) {
+                frag.setMediaLocation(media.getLocation());
+            }
             return true;
         case R.id.video_list_delete:
             AlertDialog alertDialog = CommonDialogs.deleteMedia(
@@ -389,12 +393,10 @@ public class VideoGridFragment extends SherlockGridFragment implements ISortable
                 break;
             case MediaLibrary.MEDIA_ITEMS_UPDATED:
                 // Don't update the adapter while the layout animation is running
-//                fragment.mAnimator.isAnimationDone()
-                if (true)
+                if (fragment.mAnimator.isAnimationDone())
                     fragment.updateList();
                 else
                     sendEmptyMessageDelayed(msg.what, 500);
-                sendEmptyMessageDelayed(msg.what, 500);
                 break;
             }
         }

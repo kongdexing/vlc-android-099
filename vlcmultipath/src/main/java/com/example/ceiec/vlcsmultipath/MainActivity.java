@@ -1,5 +1,6 @@
 package com.example.ceiec.vlcsmultipath;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnPlay = (Button) findViewById(R.id.btnPlay);
         btnPlayLocal = (Button) findViewById(R.id.btnPlayLocal);
         ((Button) findViewById(R.id.btnMulti)).setOnClickListener(this);
+        ((Button) findViewById(R.id.btnMultiGrid)).setOnClickListener(this);
         btnPlay.setOnClickListener(this);
         btnPlayLocal.setOnClickListener(this);
     }
@@ -67,9 +69,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 VideoPlayerActivity.start(this, mediaLocation);
                 break;
             case R.id.btnMulti:
-                mediaLocation = LibVLC.PathToURI(editPath.getText().toString());
-                mediaLocation = "file:///storage/emulated/0/tencent/QQfile_recv/%E5%A4%A7%E5%A6%9E%E5%AD%A6%E8%BD%A6.mp4";
-                VideoPlayerMultiActivity.start(this, mediaLocation);
+                break;
+            case R.id.btnMultiGrid:
+//                VideoGridActivity
                 break;
         }
     }

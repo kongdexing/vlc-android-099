@@ -24,6 +24,7 @@ import org.videolan.libvlc.LibVLC;
 import org.videolan.libvlc.LibVlcException;
 import org.videolan.vlc.VLCApplication;
 import org.videolan.vlc.VLCCrashHandler;
+import org.videolan.vlc.gui.NativeCrashActivity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -47,10 +48,10 @@ public class VLCInstance {
             instance.setOnNativeCrashListener(new LibVLC.OnNativeCrashListener() {
                 @Override
                 public void onNativeCrash() {
-//                    Intent i = new Intent(context, NativeCrashActivity.class);
-//                    i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-//                    i.putExtra("PID", android.os.Process.myPid());
-//                    context.startActivity(i);
+                    Intent i = new Intent(context, NativeCrashActivity.class);
+                    i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    i.putExtra("PID", android.os.Process.myPid());
+                    context.startActivity(i);
                 }
             });
         }

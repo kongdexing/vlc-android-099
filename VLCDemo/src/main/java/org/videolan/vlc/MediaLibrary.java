@@ -37,6 +37,7 @@ import org.videolan.libvlc.LibVLC;
 import org.videolan.libvlc.LibVlcException;
 import org.videolan.libvlc.Media;
 import org.videolan.vlc.gui.MainActivity;
+import org.videolan.vlc.gui.audio.AudioBrowserFragment;
 import org.videolan.vlc.gui.video.VideoGridFragment;
 import org.videolan.vlc.util.AndroidDevices;
 import org.videolan.vlc.util.VLCInstance;
@@ -140,6 +141,36 @@ public class MediaLibrary {
         return audioItems;
     }
 
+    public ArrayList<Media> getAudioItems(String name, String name2, int mode) {
+        ArrayList<Media> audioItems = new ArrayList<Media>();
+        mItemListLock.readLock().lock();
+        for (int i = 0; i < mItemList.size(); i++) {
+            Media item = mItemList.get(i);
+            if (item.getType() == Media.TYPE_AUDIO) {
+
+                boolean valid = false;
+                switch (mode) {
+                    case AudioBrowserFragment.MODE_ARTIST:
+                        valid = name.equals(item.getArtist()) && (name2 == null || name2.equals(item.getAlbum()));
+                        break;
+                    case AudioBrowserFragment.MODE_ALBUM:
+                        valid = name.equals(item.getAlbum());
+                        break;
+                    case AudioBrowserFragment.MODE_GENRE:
+                        valid = name.equals(item.getGenre()) && (name2 == null || name2.equals(item.getAlbum()));
+                        break;
+                    default:
+                        break;
+                }
+                if (valid)
+                    audioItems.add(item);
+
+            }
+        }
+        mItemListLock.readLock().unlock();
+        return audioItems;
+    }
+
     public ArrayList<Media> getMediaItems() {
         return mItemList;
     }
@@ -186,6 +217,9 @@ public class MediaLibrary {
 
             // Initialize variables
             final MediaDatabase DBManager = MediaDatabase.getInstance();
+
+            // show progressbar in footer
+            MainActivity.showProgressBar();
 
             List<File> mediaDirs = DBManager.getMediaDirs();
             if (mediaDirs.size() == 0) {
@@ -268,6 +302,8 @@ public class MediaLibrary {
                 // Process the stacked items
                 for (File file : mediaToScan) {
                     String fileURI = LibVLC.PathToURI(file.getPath());
+                    MainActivity.sendTextInfo(file.getName(), count,
+                            mediaToScan.size());
                     count++;
                     if (existingMedias.containsKey(fileURI)) {
                         /**
@@ -314,6 +350,10 @@ public class MediaLibrary {
                         if (!file.isDirectory())
                             DBManager.removeDir(file.getAbsolutePath());
                 }
+
+                // hide progressbar in footer
+                MainActivity.clearTextInfo();
+                MainActivity.hideProgressBar();
 
                 VideoGridFragment.actionScanStop();
 

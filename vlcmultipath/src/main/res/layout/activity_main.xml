@@ -73,4 +73,27 @@
 
     </RelativeLayout>
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editPath3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/btnMultiGrid"
+            android:text="/sdcard/Movies/Touch_The_Sky.mp4">
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/btnMultiGrid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="多播GridView" />
+
+    </RelativeLayout>
+
 </LinearLayout>
