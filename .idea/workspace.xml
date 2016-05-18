@@ -18,87 +18,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1fa3dd21-2010-4e2d-9e3f-99c576b7ead7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vlcmultipath/libs/armeabi/libiomx-gingerbread.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vlcmultipath/libs/armeabi/libiomx-hc.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vlcmultipath/libs/armeabi/libiomx-ics.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vlcmultipath/libs/armeabi/libvlcjni.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vlcmultipath/libs/mips/libiomx-gingerbread.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vlcmultipath/libs/mips/libiomx-hc.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vlcmultipath/libs/mips/libiomx-ics.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vlcmultipath/libs/mips/libvlcjni.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vlcmultipath/libs/x86/libiomx-gingerbread.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vlcmultipath/libs/x86/libiomx-ics.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vlcmultipath/libs/x86/libvlcjni.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/RemoteControlClientReceiver.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/AboutFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/BrowserActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/BrowserAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/CompatErrorActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/DebugLogActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/DirectoryAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/DirectoryViewFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/HistoryAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/HistoryFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/NativeCrashActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/PreferencesActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/SearchFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/SearchHistoryAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/SearchResultAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/SidebarAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/audio/AudioAlbumsSongsFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/audio/AudioBrowserFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/audio/AudioBrowserListAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/audio/AudioPlayer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/audio/AudioPlaylistAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/audio/AudioPlaylistView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/audio/EqualizerFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/audio/MediaComparators.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/audio/widget/CoverMediaSwitcher.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/audio/widget/HeaderMediaSwitcher.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/expandable/JumpToTime.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/expandable/TimeSleep.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/interfaces/IAudioService.aidl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/interfaces/IAudioServiceCallback.aidl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VLCDemo/src/main/res/layout/sliding_menu.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VLCDemo/src/main/res/menu/media_library.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vlcmultipath/src/main/res/layout/activity_video_grid.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vlcmultipath/src/main/res/layout/layout_videoview.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/animated_vector_drawable_23_3_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_23_3_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/hamcrest_core_1_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/junit_4_12.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_annotations_23_3_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_23_3_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_vector_drawable_23_3_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/android/ui/MyPlayerActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vlcmultipath/src/main/java/com/example/ceiec/vlcsmultipath/VideoPlayerMultiActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/AboutFragment.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/BrowserActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/BrowserAdapter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/DirectoryAdapter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/DirectoryViewFragment.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/HistoryAdapter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/HistoryFragment.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/SearchFragment.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/SearchHistoryAdapter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/SearchResultAdapter.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SlidingMenu/SlidingMenu.iml" afterPath="$PROJECT_DIR$/SlidingMenu/SlidingMenu.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VLCDemo/VLCDemo.iml" afterPath="$PROJECT_DIR$/VLCDemo/VLCDemo.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VLCDemo/build.gradle" afterPath="$PROJECT_DIR$/VLCDemo/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VLCDemo/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/VLCDemo/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/MediaLibrary.java" afterPath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/MediaLibrary.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/Thumbnailer.java" afterPath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/Thumbnailer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/audio/AudioService.java" afterPath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/audio/AudioService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/CommonDialogs.java" afterPath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/CommonDialogs.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/MainActivity.java" afterPath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/video/VideoGridFragment.java" afterPath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/video/VideoGridFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/video/VideoPlayerActivity.java" afterPath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/video/VideoPlayerActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/util/VLCInstance.java" afterPath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/util/VLCInstance.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VLCDemo/src/main/res/layout/main.xml" afterPath="$PROJECT_DIR$/VLCDemo/src/main/res/layout/main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WheelView/WheelView.iml" afterPath="$PROJECT_DIR$/WheelView/WheelView.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vlcmultipath/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/vlcmultipath/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vlcmultipath/src/main/java/com/example/ceiec/vlcsmultipath/MainActivity.java" afterPath="$PROJECT_DIR$/vlcmultipath/src/main/java/com/example/ceiec/vlcsmultipath/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vlcmultipath/src/main/java/org/videolan/vlc/audio/AudioServiceController.java" afterPath="$PROJECT_DIR$/vlcmultipath/src/main/java/org/videolan/vlc/audio/AudioServiceController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vlcmultipath/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/vlcmultipath/src/main/res/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vlcmultipath/src/main/res/values/dimens.xml" afterPath="$PROJECT_DIR$/vlcmultipath/src/main/res/values/dimens.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vlcmultipath/vlcmultipath.iml" afterPath="$PROJECT_DIR$/vlcmultipath/vlcmultipath.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/PreferencesActivity.java" afterPath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/PreferencesActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/SidebarAdapter.java" afterPath="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/SidebarAdapter.java" />
     </list>
     <ignored path="VLC.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -268,12 +206,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.53541076">
+              <caret line="192" column="0" selection-start-line="192" selection-start-column="0" selection-end-line="192" selection-end-column="0" />
+              <folding>
+                <element signature="e#20034#20035#0" expanded="true" />
+                <element signature="e#20061#20062#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SidebarAdapter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/SidebarAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="581" column="43" selection-start-line="581" selection-start-column="38" selection-end-line="581" selection-end-column="43" />
+              <caret line="146" column="9" selection-start-line="146" selection-start-column="9" selection-end-line="146" selection-end-column="9" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PreferencesActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/PreferencesActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="81" column="21" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="21" />
+              <folding>
+                <element signature="e#3320#3539#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -282,21 +245,20 @@
         <entry file="file://$PROJECT_DIR$/VLCDemo/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-11.1875">
-              <caret line="390" column="45" selection-start-line="390" selection-start-column="45" selection-end-line="390" selection-end-column="45" />
+              <caret line="386" column="45" selection-start-line="386" selection-start-column="45" selection-end-line="386" selection-end-column="45" />
               <folding>
                 <element signature="e#1118#1136#0" expanded="true" />
                 <element signature="e#1424#1442#0" expanded="true" />
-                <element signature="e#1972#1992#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RemoteControlClientReceiver.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RemoteControlClientReceiver.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/RemoteControlClientReceiver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33279485">
-              <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="48" column="38" selection-start-line="48" selection-start-column="38" selection-end-line="48" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -4477,8 +4439,6 @@
         <option value="$PROJECT_DIR$/vlcmultipath/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/MainActivity.java" />
         <option value="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/BrowserAdapter.java" />
-        <option value="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/PreferencesActivity.java" />
-        <option value="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/SidebarAdapter.java" />
         <option value="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/util/VLCInstance.java" />
         <option value="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/audio/AudioService.java" />
         <option value="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/video/VideoListAdapter.java" />
@@ -4492,10 +4452,12 @@
         <option value="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/video/VideoGridFragment.java" />
         <option value="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/audio/CoverMediaSwitcher.java" />
         <option value="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/audio/AudioPlayer.java" />
-        <option value="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/MainActivity.java" />
         <option value="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/CompatErrorActivity.java" />
         <option value="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/NativeCrashActivity.java" />
         <option value="$PROJECT_DIR$/VLCDemo/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/MainActivity.java" />
+        <option value="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/SidebarAdapter.java" />
+        <option value="$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/PreferencesActivity.java" />
       </list>
     </option>
   </component>
@@ -4779,6 +4741,44 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="vlc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VLC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VLC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VLCDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="videolan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vlc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gui" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -5360,7 +5360,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28654292" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -5368,7 +5368,7 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14965197" sideWeight="0.50428724" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24477959" sideWeight="0.49571276" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1438515" sideWeight="0.49571276" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2550911" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946634" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21809745" sideWeight="0.49785638" order="2" side_tool="false" content_ui="tabs" />
@@ -5377,7 +5377,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27706325" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27706325" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23549885" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12540193" sideWeight="0.49307957" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -5770,31 +5770,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="581" column="43" selection-start-line="581" selection-start-column="38" selection-end-line="581" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/VLCDemo/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.1875">
-          <caret line="390" column="45" selection-start-line="390" selection-start-column="45" selection-end-line="390" selection-end-column="45" />
+          <caret line="386" column="45" selection-start-line="386" selection-start-column="45" selection-end-line="386" selection-end-column="45" />
           <folding>
             <element signature="e#1118#1136#0" expanded="true" />
             <element signature="e#1424#1442#0" expanded="true" />
-            <element signature="e#1972#1992#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/RemoteControlClientReceiver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33279485">
-          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="48" column="38" selection-start-line="48" selection-start-column="38" selection-end-line="48" selection-end-column="38" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/SidebarAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="146" column="9" selection-start-line="146" selection-start-column="9" selection-end-line="146" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/PreferencesActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="81" column="21" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="21" />
+          <folding>
+            <element signature="e#3320#3539#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VLCDemo/src/main/java/org/videolan/vlc/gui/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.53541076">
+          <caret line="192" column="0" selection-start-line="192" selection-start-column="0" selection-end-line="192" selection-end-column="0" />
+          <folding>
+            <element signature="e#20034#20035#0" expanded="true" />
+            <element signature="e#20061#20062#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

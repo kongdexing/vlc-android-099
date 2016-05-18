@@ -139,8 +139,6 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         if (!LibVlcUtil.hasCompatibleCPU(this)) {
             Log.e(TAG, LibVlcUtil.getErrorMsg());
-            Intent i = new Intent(this, CompatErrorActivity.class);
-            startActivity(i);
             finish();
             super.onCreate(savedInstanceState);
             return;
@@ -172,10 +170,6 @@ public class MainActivity extends ActionBarActivity {
             VLCInstance.getLibVlcInstance();
         } catch (LibVlcException e) {
             e.printStackTrace();
-            Intent i = new Intent(this, CompatErrorActivity.class);
-            i.putExtra("runtimeError", true);
-            i.putExtra("message", "LibVLC failed to initialize (LibVlcException)");
-            startActivity(i);
             finish();
             super.onCreate(savedInstanceState);
             return;
@@ -350,11 +344,6 @@ public class MainActivity extends ActionBarActivity {
             found = true;
         }
 
-        /**
-         * Let's see if Android recreated anything for us in the bundle.
-         * Prevent duplicate creation of fragments, since mSidebarAdapter might
-         * have been purged (losing state) when this activity was killed.
-         */
         for(int i = 0; i < SidebarAdapter.entries.size(); i++) {
             String fragmentTag = SidebarAdapter.entries.get(i).id;
             Fragment fragment = getSupportFragmentManager().findFragmentByTag(fragmentTag);
@@ -364,18 +353,6 @@ public class MainActivity extends ActionBarActivity {
             }
         }
 
-        /**
-         * Restore the last view.
-         *
-         * Replace:
-         * - null fragments (freshly opened Activity)
-         * - Wrong fragment open AND currently displayed fragment is a top-level fragment
-         *
-         * Do not replace:
-         * - Non-sidebar fragments.
-         * It will try to remove() the currently displayed fragment
-         * (i.e. tracks) and replace it with a blank screen. (stuck menu bug)
-         */
         if(current == null || (!current.getTag().equals(mCurrentFragment) && found)) {
             Log.d(TAG, "Reloading displayed fragment");
             if(mCurrentFragment == null || secondaryFragments.contains(mCurrentFragment))
@@ -440,22 +417,12 @@ public class MainActivity extends ActionBarActivity {
             return;
 
         if (mCurrentFragment!= null) {
-            // If it's the directory view, a "backpressed" action shows a parent.
-            if (mCurrentFragment.equals("directories")) {
-                DirectoryViewFragment directoryView = (DirectoryViewFragment) getFragment(mCurrentFragment);
-                if (!directoryView.isRootDirectory()) {
-                    directoryView.showParentDirectory();
-                    return;
-                }
-            }
-
             // If it's the albums songs fragment, we leave it.
             if (secondaryFragments.contains(mCurrentFragment)) {
                 popSecondaryFragment();
                 return;
             }
         }
-
         super.onBackPressed();
     }
 
@@ -504,10 +471,6 @@ public class MainActivity extends ActionBarActivity {
             f = new AudioAlbumsSongsFragment();
         } else if(id.equals("equalizer")) {
             f = new EqualizerFragment();
-        } else if(id.equals("about")) {
-            f = new AboutFragment();
-        } else if(id.equals("search")) {
-            f = new SearchFragment();
         } else if(id.equals("mediaInfo")) {
             f = new MediaInfoFragment();
         } else if(id.equals("videoGroupList")) {
@@ -560,26 +523,11 @@ public class MainActivity extends ActionBarActivity {
          * is called while the view is created. This can happen
          * any time after onCreate.
          */
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.media_library, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
     @Override
     public boolean onPrepareOptionsMenu (Menu menu) {
-        Fragment current = getSupportFragmentManager().findFragmentById(R.id.fragment_placeholder);
-        // Disable the sort option if we can't use it on the current fragment.
-        if (current == null || !(current instanceof ISortable)) {
-            menu.findItem(R.id.ml_menu_sortby).setEnabled(false);
-            menu.findItem(R.id.ml_menu_sortby).setVisible(false);
-        }
-        else {
-            menu.findItem(R.id.ml_menu_sortby).setEnabled(true);
-            menu.findItem(R.id.ml_menu_sortby).setVisible(true);
-        }
-        // Enable the clear search history function for the search fragment.
-        if (mCurrentFragment != null && mCurrentFragment.equals("search"))
-            menu.findItem(R.id.search_clear_history).setVisible(true);
         return true;
     }
 
@@ -589,85 +537,17 @@ public class MainActivity extends ActionBarActivity {
         changeMenuOffset();
     }
 
-    @Override
-    public boolean onSearchRequested() {
-        if (mCurrentFragment != null && mCurrentFragment.equals("search"))
-            ((SearchFragment)fetchSecondaryFragment("search")).onSearchKeyPressed();
-        showSecondaryFragment("search");
-        return true;
-    }
-
     /**
      * Handle onClick form menu buttons
      */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-
-        // Intent to start a new Activity
-        Intent intent;
-        // Current fragment loaded
-        Fragment current = getSupportFragmentManager().findFragmentById(R.id.fragment_placeholder);
-
         // Handle item selection
         switch (item.getItemId()) {
-            case R.id.ml_menu_sortby_name:
-            case R.id.ml_menu_sortby_length:
-                if (current == null)
-                    break;
-                if (current instanceof ISortable)
-                    ((ISortable) current).sortBy(item.getItemId() == R.id.ml_menu_sortby_name
-                    ? VideoListAdapter.SORT_BY_TITLE
-                    : VideoListAdapter.SORT_BY_LENGTH);
-                break;
-            // About
-            case R.id.ml_menu_about:
-                showSecondaryFragment("about");
-                break;
-            // Preferences
-            case R.id.ml_menu_preferences:
-                intent = new Intent(this, PreferencesActivity.class);
-                startActivityForResult(intent, ACTIVITY_RESULT_PREFERENCES);
-                break;
-            case R.id.ml_menu_equalizer:
-                showSecondaryFragment("equalizer");
-                break;
-            // Refresh
-            case R.id.ml_menu_refresh:
-                if(current != null && current instanceof IRefreshable)
-                    ((IRefreshable) current).refresh();
-                else
-                    MediaLibrary.getInstance().loadMediaItems(this, true);
-                break;
-            // Restore last playlist
-            case R.id.ml_menu_last_playlist:
-                Intent i = new Intent(AudioService.ACTION_REMOTE_LAST_PLAYLIST);
-                sendBroadcast(i);
-                break;
-            // Open MRL
-            case R.id.ml_menu_open_mrl:
-                onOpenMRL();
-                break;
-            case R.id.ml_menu_search:
-                onSearchRequested();
-                break;
             case android.R.id.home:
-                // Slide down the audio player.
-                if (slideDownAudioPlayer())
-                    break;
-
-                // If it's the albums songs view, a "backpressed" action shows .
-                if (secondaryFragments.contains(mCurrentFragment)) {
-                    popSecondaryFragment();
-                    break;
-                }
-                /* Toggle the sidebar */
-                if(mMenu.isMenuShowing())
-                    mMenu.showContent();
-                else
-                    mMenu.showMenu();
-                break;
-            case R.id.search_clear_history:
-                MediaDatabase.getInstance().clearSearchHistory();
+                AudioServiceController c = AudioServiceController.getInstance();
+                String s = "http://114.215.238.235:5581/glass/web/glassactivation.mp4";
+                c.load(s, false);
                 break;
         }
         return super.onOptionsItemSelected(item);
@@ -803,46 +683,6 @@ public class MainActivity extends ActionBarActivity {
 
     public static void clearTextInfo() {
         sendTextInfo(null, 0, 100);
-    }
-
-    private void onOpenMRL() {
-        AlertDialog.Builder b = new AlertDialog.Builder(this);
-        final EditText input = new EditText(this);
-        input.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_URI);
-        b.setTitle(R.string.open_mrl_dialog_title);
-        b.setMessage(R.string.open_mrl_dialog_msg);
-        b.setView(input);
-        b.setPositiveButton(R.string.open, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int button) {
-
-                /* Start this in a new thread as to not block the UI thread */
-                VLCCallbackTask task = new VLCCallbackTask(MainActivity.this)
-                {
-                    @Override
-                    public void run() {
-                      AudioServiceController c = AudioServiceController.getInstance();
-                      String s = input.getText().toString();
-
-                      /* Use the audio player by default. If a video track is
-                       * detected, then it will automatically switch to the video
-                       * player. This allows us to support more types of streams
-                       * (for example, RTSP and TS streaming) where ES can be
-                       * dynamically adapted rather than a simple scan.
-                       */
-                      c.load(s, false);
-                    }
-                };
-                task.execute();
-            }
-        }
-        );
-        b.setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface arg0, int arg1) {
-                return;
-                }});
-        b.show();
     }
 
     /**

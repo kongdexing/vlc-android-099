@@ -78,9 +78,6 @@ public class PreferencesActivity extends PreferenceActivity implements OnSharedP
 
                     @Override
                     public boolean onPreferenceClick(Preference preference) {
-                        Intent intent = new Intent(getApplicationContext(), BrowserActivity.class);
-                        startActivity(intent);
-                        setResult(RESULT_RESCAN);
                         return true;
                     }
                 });

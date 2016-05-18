@@ -144,10 +144,6 @@ public class SidebarAdapter extends BaseAdapter {
             f = new AudioBrowserFragment();
         } else if(id.equals("video")) {
             f = new VideoGridFragment();
-        } else if(id.endsWith("directories")) {
-            f = new DirectoryViewFragment();
-        } else if(id.equals("history")) {
-            f = new HistoryFragment();
         }
         else {
             mCurrentFragmentId = prevFragmentId; // Restore the current fragment id.
