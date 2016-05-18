@@ -3,9 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SlidingMenu/SlidingMenu.iml" filepath="$PROJECT_DIR$/SlidingMenu/SlidingMenu.iml" />
-      <module fileurl="file://$PROJECT_DIR$/VLC.iml" filepath="$PROJECT_DIR$/VLC.iml" />
       <module fileurl="file://$PROJECT_DIR$/VLCDemo/VLCDemo.iml" filepath="$PROJECT_DIR$/VLCDemo/VLCDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/WheelView/WheelView.iml" filepath="$PROJECT_DIR$/WheelView/WheelView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vlc-android-099.iml" filepath="$PROJECT_DIR$/vlc-android-099.iml" />
       <module fileurl="file://$PROJECT_DIR$/vlcmultipath/vlcmultipath.iml" filepath="$PROJECT_DIR$/vlcmultipath/vlcmultipath.iml" />
     </modules>
   </component>

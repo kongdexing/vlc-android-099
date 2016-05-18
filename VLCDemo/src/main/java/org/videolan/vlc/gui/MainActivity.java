@@ -23,6 +23,7 @@ package org.videolan.vlc.gui;
 import android.annotation.TargetApi;
 import android.content.BroadcastReceiver;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.res.Configuration;
@@ -43,10 +44,13 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ListView;
 
 import com.slidingmenu.lib.SlidingMenu;
 
+import org.videolan.libvlc.LibVLC;
 import org.videolan.libvlc.LibVlcException;
 import org.videolan.libvlc.LibVlcUtil;
 import org.videolan.vlc.MediaLibrary;
@@ -58,6 +62,7 @@ import org.videolan.vlc.gui.audio.AudioPlayer;
 import org.videolan.vlc.gui.audio.EqualizerFragment;
 import org.videolan.vlc.gui.video.MediaInfoFragment;
 import org.videolan.vlc.gui.video.VideoGridFragment;
+import org.videolan.vlc.gui.video.VideoPlayerActivity;
 import org.videolan.vlc.util.Util;
 import org.videolan.vlc.util.VLCInstance;
 import org.videolan.vlc.util.WeakHandler;
@@ -67,7 +72,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends ActionBarActivity implements View.OnClickListener{
     public final static String TAG = "VLC/MainActivity";
 
     protected static final String ACTION_SHOW_PROGRESSBAR = "org.videolan.vlc.gui.ShowProgressBar";
@@ -77,17 +82,11 @@ public class MainActivity extends ActionBarActivity {
 
     private static final int ACTIVITY_SHOW_INFOLAYOUT = 2;
 
+    private EditText editUri;
+    private EditText editPath;
+    private Button btnPlay;
+    private Button btnPlayLocal;
     private ActionBar mActionBar;
-    private SidebarAdapter mSidebarAdapter;
-    private SlidingPaneLayout mSlidingPane;
-
-    private String mCurrentFragment;
-    private String mPreviousFragment;
-    private List<String> secondaryFragments = Arrays.asList("albumsSongs", "equalizer",
-            "about", "search", "mediaInfo",
-            "videoGroupList");
-    private HashMap<String, Fragment> mSecondaryFragments = new HashMap<String, Fragment>();
-
     private Handler mHandler = new MainActivityHandler(this);
 
     @Override
@@ -99,34 +98,14 @@ public class MainActivity extends ActionBarActivity {
             return;
         }
 
-        try {
-            // Start LibVLC
-            VLCInstance.getLibVlcInstance();
-        } catch (LibVlcException e) {
-            e.printStackTrace();
-            finish();
-            super.onCreate(savedInstanceState);
-            return;
-        }
-
         super.onCreate(savedInstanceState);
 
-        /*** Start initializing the UI ***/
-
         /* Enable the indeterminate progress feature */
-        requestWindowFeature(Window.FEATURE_INDETERMINATE_PROGRESS);
+//        requestWindowFeature(Window.FEATURE_INDETERMINATE_PROGRESS);
 
         View v_main = LayoutInflater.from(this).inflate(R.layout.main, null);
         setContentView(v_main);
-
-        mSlidingPane = (SlidingPaneLayout) v_main.findViewById(R.id.pane);
-
-        View sidebar = LayoutInflater.from(this).inflate(R.layout.sidebar, null);
-        final ListView listView = (ListView) sidebar.findViewById(android.R.id.list);
-        listView.setFooterDividersEnabled(true);
-        mSidebarAdapter = new SidebarAdapter(this);
-        listView.setAdapter(mSidebarAdapter);
-
+        initView();
         /* Set up the action bar */
         prepareActionBar();
 
@@ -150,59 +129,45 @@ public class MainActivity extends ActionBarActivity {
     protected void onResume() {
         super.onResume();
         AudioServiceController.getInstance().bindAudioService(this);
+    }
 
-        /* FIXME: this is used to avoid having MainActivity twice in the backstack */
-        if (getIntent().hasExtra(AudioService.START_FROM_NOTIFICATION))
-            getIntent().removeExtra(AudioService.START_FROM_NOTIFICATION);
+    private void initView() {
+        editUri = (EditText) findViewById(R.id.editUri);
+        editPath = (EditText) findViewById(R.id.editPath);
+        btnPlay = (Button) findViewById(R.id.btnPlay);
+        btnPlayLocal = (Button) findViewById(R.id.btnPlayLocal);
+        ((Button) findViewById(R.id.btnMulti)).setOnClickListener(this);
+        ((Button) findViewById(R.id.btnMultiGrid)).setOnClickListener(this);
+        btnPlay.setOnClickListener(this);
+        btnPlayLocal.setOnClickListener(this);
     }
 
     @Override
-    protected void onResumeFragments() {
-        super.onResumeFragments();
-
-        // Figure out if currently-loaded fragment is a top-level fragment.
-        Fragment current = getSupportFragmentManager()
-                .findFragmentById(R.id.fragment_placeholder);
-        boolean found = false;
-        if (current != null) {
-            found = SidebarAdapter.sidebarFragments.contains(current.getTag());
-        } else {
-            found = true;
-        }
-
-        for (int i = 0; i < SidebarAdapter.entries.size(); i++) {
-            String fragmentTag = SidebarAdapter.entries.get(i).id;
-            Fragment fragment = getSupportFragmentManager().findFragmentByTag(fragmentTag);
-            if (fragment != null) {
-                Log.d(TAG, "Restoring automatically recreated fragment \"" + fragmentTag + "\"");
-                mSidebarAdapter.restoreFragment(fragmentTag, fragment);
-            }
-        }
-
-        if (current == null || (!current.getTag().equals(mCurrentFragment) && found)) {
-            Log.d(TAG, "Reloading displayed fragment");
-            if (mCurrentFragment == null || secondaryFragments.contains(mCurrentFragment))
-                mCurrentFragment = "video";
-            if (!SidebarAdapter.sidebarFragments.contains(mCurrentFragment)) {
-                Log.d(TAG, "Unknown fragment \"" + mCurrentFragment + "\", resetting to video");
-                mCurrentFragment = "video";
-            }
-            Fragment ff = getFragment(mCurrentFragment);
-            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-            ft.replace(R.id.fragment_placeholder, ff, mCurrentFragment);
-            ft.commit();
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.btnPlay:
+                /* Start this in a new thread as to not block the UI thread */
+                AudioServiceController c = AudioServiceController.getInstance();
+                String s = editUri.getText().toString();
+                s="http://114.215.238.235:5581/glass/web/glassactivation.mp4";
+                c.load(s, false);
+                break;
+            case R.id.btnPlayLocal:
+                String mediaLocation = LibVLC.PathToURI(editPath.getText().toString());
+                mediaLocation = "file:///storage/emulated/0/tencent/QQfile_recv/%E5%A4%A7%E5%A6%9E%E5%AD%A6%E8%BD%A6.mp4";
+                VideoPlayerActivity.start(this, mediaLocation);
+                break;
+            case R.id.btnMulti:
+                break;
+            case R.id.btnMultiGrid:
+//                VideoGridActivity
+                break;
         }
     }
 
-    /**
-     * Stop audio player and save opened tab
-     */
     @Override
     protected void onPause() {
         super.onPause();
-        /* Check for an ongoing scan that needs to be resumed during onResume */
-//        mScanNeeded = MediaLibrary.getInstance().isWorking();
-        /* Stop scanning for files */
         MediaLibrary.getInstance().stop();
         AudioServiceController.getInstance().unbindAudioService(this);
     }
@@ -214,93 +179,6 @@ public class MainActivity extends ActionBarActivity {
             unregisterReceiver(messageReceiver);
         } catch (IllegalArgumentException e) {
         }
-    }
-
-    private Fragment getFragment(String id) {
-        return mSidebarAdapter.fetchFragment(id);
-    }
-
-    private static void ShowFragment(FragmentActivity activity, String tag, Fragment fragment) {
-        if (fragment == null) {
-            Log.e(TAG, "Cannot show a null fragment, ShowFragment(" + tag + ") aborted.");
-            return;
-        }
-
-        FragmentManager fm = activity.getSupportFragmentManager();
-
-        //abort if fragment is already the current one
-        Fragment current = fm.findFragmentById(R.id.fragment_placeholder);
-        if (current != null && current.getTag().equals(tag))
-            return;
-
-        //try to pop back if the fragment is already on the backstack
-        if (fm.popBackStackImmediate(tag, 0))
-            return;
-
-        //fragment is not there yet, spawn a new one
-        FragmentTransaction ft = fm.beginTransaction();
-        ft.setCustomAnimations(R.anim.anim_enter_right, R.anim.anim_leave_left, R.anim.anim_enter_left, R.anim.anim_leave_right);
-        ft.replace(R.id.fragment_placeholder, fragment, tag);
-        ft.addToBackStack(tag);
-        ft.commit();
-    }
-
-    /**
-     * Fetch a secondary fragment.
-     * @param id the fragment id
-     * @return the fragment.
-     */
-    public Fragment fetchSecondaryFragment(String id) {
-        if (mSecondaryFragments.containsKey(id)
-                && mSecondaryFragments.get(id) != null)
-            return mSecondaryFragments.get(id);
-
-        Fragment f;
-        if (id.equals("albumsSongs")) {
-            f = new AudioAlbumsSongsFragment();
-        } else if (id.equals("equalizer")) {
-            f = new EqualizerFragment();
-        } else if (id.equals("mediaInfo")) {
-            f = new MediaInfoFragment();
-        } else if (id.equals("videoGroupList")) {
-            f = new VideoGridFragment();
-        } else {
-            throw new IllegalArgumentException("Wrong fragment id.");
-        }
-        f.setRetainInstance(true);
-        mSecondaryFragments.put(id, f);
-        return f;
-    }
-
-    /**
-     * Show a secondary fragment.
-     */
-    public Fragment showSecondaryFragment(String fragmentTag) {
-        // Slide down the audio player if needed.
-        slideDownAudioPlayer();
-
-        if (mCurrentFragment != null) {
-            // Do not show the new fragment if the requested fragment is already shown.
-            if (mCurrentFragment.equals(fragmentTag))
-                return null;
-
-            if (!secondaryFragments.contains(mCurrentFragment))
-                mPreviousFragment = mCurrentFragment;
-        }
-
-        mCurrentFragment = fragmentTag;
-        Fragment frag = fetchSecondaryFragment(mCurrentFragment);
-        ShowFragment(this, mCurrentFragment, frag);
-        return frag;
-    }
-
-    /**
-     * Hide the current secondary fragment.
-     */
-    public void popSecondaryFragment() {
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        fragmentManager.popBackStackImmediate(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
-        mCurrentFragment = mPreviousFragment;
     }
 
     /**
@@ -352,18 +230,6 @@ public class MainActivity extends ActionBarActivity {
         @Override
         public void handleMessage(Message msg) {
         }
-    }
-
-    /**
-     * Slide down the audio player.
-     * @return true on success else false.
-     */
-    public boolean slideDownAudioPlayer() {
-        if (mSlidingPane.getState() == mSlidingPane.STATE_CLOSED) {
-            mSlidingPane.openPane();
-            return true;
-        }
-        return false;
     }
 
 }

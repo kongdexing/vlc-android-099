@@ -93,16 +93,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btnPlay:
-                /* Start this in a new thread as to not block the UI thread */
-                VLCCallbackTask task = new VLCCallbackTask(MainActivity.this) {
-                    @Override
-                    public void run() {
-                        AudioServiceController c = AudioServiceController.getInstance();
-                        String s = editUri.getText().toString();
-                        c.load(s, false);
-                    }
-                };
-                task.execute();
+                AudioServiceController c = AudioServiceController.getInstance();
+                String s = editUri.getText().toString();
+                s="http://114.215.238.235:5581/glass/web/glassactivation.mp4";
+                c.load(s, false);
                 break;
             case R.id.btnPlayLocal:
                 String mediaLocation = LibVLC.PathToURI(editPath.getText().toString());
@@ -133,18 +127,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 int max = intent.getIntExtra("max", 0);
                 int progress = intent.getIntExtra("progress", 100);
                 Log.i(TAG, "onReceive: ACTION_SHOW_TEXTINFO info " + info + " max " + max + " progress " + progress);
-
-//                mInfoText.setText(info);
-//                mInfoProgress.setMax(max);
-//                mInfoProgress.setProgress(progress);
-
                 if (info == null) {
                     /* Cancel any upcoming visibility change */
                     mHandler.removeMessages(ACTIVITY_SHOW_INFOLAYOUT);
-//                    mInfoLayout.setVisibility(View.GONE);
                 }
-            } else if (action.equalsIgnoreCase(ACTION_SHOW_PLAYER)) {
-//                showAudioPlayer();
             }
         }
     };

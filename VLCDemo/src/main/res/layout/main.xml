@@ -1,71 +1,100 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/root_container"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <org.videolan.vlc.widget.SlidingPaneLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:vlc="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/pane"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        vlc:overhangSize="60dp" >
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp">
 
-        <org.videolan.vlc.widget.ContentLinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:orientation="vertical" >
+        <EditText
+            android:id="@+id/editUri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/btnPlay"
+            android:text="rtsp://172.16.3.41:554/875/File">
 
-            <View
-                android:layout_width="fill_parent"
-                android:layout_height="?attr/marginTopContent"
-                android:background="@drawable/actionbar_background" />
+            <requestFocus />
+        </EditText>
 
-            <FrameLayout
-                android:id="@+id/fragment_placeholder"
-                android:layout_width="fill_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1" />
+        <Button
+            android:id="@+id/btnPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="播放在线" />
 
-            <RelativeLayout
-                android:id="@+id/info_layout"
-                android:layout_width="fill_parent"
-                android:layout_height="20dp"
-                android:visibility="gone" >
+    </RelativeLayout>
 
-                <ProgressBar
-                    android:id="@+id/info_progress"
-                    style="?android:attr/progressBarStyleHorizontal"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:progressDrawable="@drawable/progress" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-                <TextView
-                    android:id="@+id/info_text"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dip"
-                    android:layout_marginRight="5dip"
-                    android:shadowColor="#CC000000"
-                    android:shadowDx="1"
-                    android:shadowDy="1"
-                    android:shadowRadius="1.5"
-                    android:singleLine="true"
-                    android:textColor="#FFFFFFFF" />
-            </RelativeLayout>
+        <EditText
+            android:id="@+id/editPath"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/btnPlayLocal"
+            android:text="/sdcard/Movies/Touch_The_Sky.mp4">
 
-            <View
-                android:id="@+id/audio_player_filling"
-                android:layout_width="fill_parent"
-                android:layout_height="60dp"
-                android:visibility="gone" />
-        </org.videolan.vlc.widget.ContentLinearLayout>
-        <FrameLayout
-            android:background="@android:color/black"
-            android:id="@+id/audio_player"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent" />
-    </org.videolan.vlc.widget.SlidingPaneLayout>
+            <requestFocus />
+        </EditText>
 
-</RelativeLayout>
+        <Button
+            android:id="@+id/btnPlayLocal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="播放本地" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editPath2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/btnMulti"
+            android:text="/sdcard/Movies/Touch_The_Sky.mp4">
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/btnMulti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="多播" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editPath3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/btnMultiGrid"
+            android:text="/sdcard/Movies/Touch_The_Sky.mp4">
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/btnMultiGrid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="多播GridView" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -183,10 +183,10 @@ public class AudioBrowserFragment extends Fragment {
         public void onItemClick(AdapterView<?> av, View v, int p, long id) {
             ArrayList<Media> mediaList = mArtistsAdapter.getMedia(p);
             MainActivity activity = (MainActivity)getActivity();
-            AudioAlbumsSongsFragment frag = (AudioAlbumsSongsFragment)activity.showSecondaryFragment("albumsSongs");
-            if (frag != null) {
-                frag.setMediaList(mediaList, mediaList.get(0).getArtist());
-            }
+//            AudioAlbumsSongsFragment frag = (AudioAlbumsSongsFragment)activity.showSecondaryFragment("albumsSongs");
+//            if (frag != null) {
+//                frag.setMediaList(mediaList, mediaList.get(0).getArtist());
+//            }
         }
     };
 
@@ -203,10 +203,10 @@ public class AudioBrowserFragment extends Fragment {
         public void onItemClick(AdapterView<?> av, View v, int p, long id) {
             ArrayList<Media> mediaList = mGenresAdapter.getMedia(p);
             MainActivity activity = (MainActivity)getActivity();
-            AudioAlbumsSongsFragment frag = (AudioAlbumsSongsFragment)activity.showSecondaryFragment("albumsSongs");
-            if (frag != null) {
-                frag.setMediaList(mediaList, mediaList.get(0).getGenre());
-            }
+//            AudioAlbumsSongsFragment frag = (AudioAlbumsSongsFragment)activity.showSecondaryFragment("albumsSongs");
+//            if (frag != null) {
+//                frag.setMediaList(mediaList, mediaList.get(0).getGenre());
+//            }
         }
     };
 

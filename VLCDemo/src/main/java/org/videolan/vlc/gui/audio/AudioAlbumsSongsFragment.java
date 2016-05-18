@@ -161,8 +161,8 @@ public class AudioAlbumsSongsFragment extends Fragment {
             public void onTouchClick() {}
             @Override
             public void onBackSwitched() {
-                MainActivity activity = (MainActivity)getActivity();
-                activity.popSecondaryFragment();
+//                MainActivity activity = (MainActivity)getActivity();
+//                activity.popSecondaryFragment();
             }
         });
 

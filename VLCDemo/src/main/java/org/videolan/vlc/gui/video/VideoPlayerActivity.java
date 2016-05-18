@@ -147,7 +147,7 @@ public class VideoPlayerActivity extends Activity implements IVideoPlayer {
     private View mOverlayHeader;
     private View mOverlayOption;
     private View mOverlayProgress;
-    private View mOverlayBackground;
+//    private View mOverlayBackground;
     private static final int OVERLAY_TIMEOUT = 4000;
     private static final int OVERLAY_INFINITE = 3600000;
     private static final int FADE_OUT = 1;
@@ -270,7 +270,7 @@ public class VideoPlayerActivity extends Activity implements IVideoPlayer {
 
         mEnableCloneMode = mSettings.getBoolean("enable_clone_mode", false);
         createPresentation();
-        setContentView(mPresentation == null ? R.layout.player : R.layout.player_remote_control);
+        setContentView(R.layout.player);
 
         if (LibVlcUtil.isICSOrLater())
             getWindow().getDecorView().findViewById(android.R.id.content).setOnSystemUiVisibilityChangeListener(
@@ -292,7 +292,7 @@ public class VideoPlayerActivity extends Activity implements IVideoPlayer {
         mOverlayHeader = findViewById(R.id.player_overlay_header);
         mOverlayOption = findViewById(R.id.option_overlay);
         mOverlayProgress = findViewById(R.id.progress_overlay);
-        mOverlayBackground = findViewById(R.id.player_overlay_background);
+//        mOverlayBackground = findViewById(R.id.player_overlay_background);
 
         /* header */
         mTitle = (TextView) findViewById(R.id.player_overlay_title);
@@ -1644,7 +1644,7 @@ public class VideoPlayerActivity extends Activity implements IVideoPlayer {
                 dimStatusBar(false);
             }
             mOverlayProgress.setVisibility(View.VISIBLE);
-            if (mPresentation != null) mOverlayBackground.setVisibility(View.VISIBLE);
+//            if (mPresentation != null) mOverlayBackground.setVisibility(View.VISIBLE);
         }
         Message msg = mHandler.obtainMessage(FADE_OUT);
         if (timeout != 0) {
@@ -1671,8 +1671,8 @@ public class VideoPlayerActivity extends Activity implements IVideoPlayer {
                 mMenu.startAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_out));
             }
             if (mPresentation != null) {
-                mOverlayBackground.startAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_out));
-                mOverlayBackground.setVisibility(View.INVISIBLE);
+//                mOverlayBackground.startAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_out));
+//                mOverlayBackground.setVisibility(View.INVISIBLE);
             }
             mOverlayHeader.setVisibility(View.INVISIBLE);
             mOverlayOption.setVisibility(View.INVISIBLE);
@@ -2117,7 +2117,7 @@ public class VideoPlayerActivity extends Activity implements IVideoPlayer {
     }
 
     public void showAdvancedOptions(View v) {
-        CommonDialogs.advancedOptions(this, v, MenuType.Video);
+//        CommonDialogs.advancedOptions(this, v, MenuType.Video);
     }
 
     @TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR1)

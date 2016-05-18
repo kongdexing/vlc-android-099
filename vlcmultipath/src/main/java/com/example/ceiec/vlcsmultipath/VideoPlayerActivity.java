@@ -82,6 +82,7 @@ import org.videolan.libvlc.LibVLC;
 import org.videolan.libvlc.LibVlcException;
 import org.videolan.libvlc.LibVlcUtil;
 import org.videolan.libvlc.Media;
+import org.videolan.vlc.MediaDatabase;
 import org.videolan.vlc.audio.AudioServiceController;
 import org.videolan.vlc.util.AndroidDevices;
 import org.videolan.vlc.util.Strings;
@@ -140,7 +141,6 @@ public class VideoPlayerActivity extends Activity implements IVideoPlayer {
     private View mOverlayHeader;
     private View mOverlayOption;
     private View mOverlayProgress;
-    private View mOverlayBackground;
     private static final int OVERLAY_TIMEOUT = 4000;
     private static final int OVERLAY_INFINITE = 3600000;
     private static final int FADE_OUT = 1;
@@ -228,7 +228,7 @@ public class VideoPlayerActivity extends Activity implements IVideoPlayer {
     private int mPreviousHardwareAccelerationMode;
 
     // Tips
-    private View mOverlayTips;
+//    private View mOverlayTips;
     private static final String PREF_TIPS_SHOWN = "video_player_tips_shown";
 
     // Navigation handling (DVD, Blu-Ray...)
@@ -254,7 +254,7 @@ public class VideoPlayerActivity extends Activity implements IVideoPlayer {
             };
             Log.d(TAG, "MediaRouter information : " + mMediaRouter  .toString());
         }
-
+        Log.i(TAG, "onCreate: ");
         mSettings = PreferenceManager.getDefaultSharedPreferences(this);
 
         /* Services and miscellaneous */
@@ -367,6 +367,16 @@ public class VideoPlayerActivity extends Activity implements IVideoPlayer {
         mSwitchingView = false;
         mEndReached = false;
 
+        // Clear the resume time, since it is only used for resumes in external
+        // videos.
+        Editor editor = mSettings.edit();
+        editor.putLong(PreferencesActivity.VIDEO_RESUME_TIME, -1);
+        // Also clear the subs list, because it is supposed to be per session
+        // only (like desktop VLC). We don't want the customs subtitle file
+        // to persist forever with this video.
+        editor.putString(PreferencesActivity.VIDEO_SUBTITLE_FILES, null);
+        editor.commit();
+
         IntentFilter filter = new IntentFilter();
         filter.addAction(Intent.ACTION_BATTERY_CHANGED);
         filter.addAction(VLCApplication.SLEEP_INTENT);
@@ -395,6 +405,14 @@ public class VideoPlayerActivity extends Activity implements IVideoPlayer {
             setRequestedOrientation(mScreenOrientation != 100
                     ? mScreenOrientation
                     : getScreenOrientation());
+            // Tips
+//            mOverlayTips = findViewById(R.id.player_overlay_tips);
+//            if(mSettings.getBoolean(PREF_TIPS_SHOWN, false))
+//                mOverlayTips.setVisibility(View.GONE);
+//            else {
+//                mOverlayTips.bringToFront();
+//                mOverlayTips.invalidate();
+//            }
         } else
             setRequestedOrientation(getScreenOrientation());
 
@@ -439,15 +457,15 @@ public class VideoPlayerActivity extends Activity implements IVideoPlayer {
         Editor editor = mSettings.edit();
         // Save position
         if (time >= 0 && mCanSeek) {
-//            if(MediaDatabase.getInstance().mediaItemExists(mLocation)) {
-//                MediaDatabase.getInstance().updateMedia(
-//                        mLocation,
-//                        MediaDatabase.mediaColumn.MEDIA_TIME,
-//                        time);
-//            } else {
-//                // Video file not in media library, store time just for onResume()
-//                editor.putLong(PreferencesActivity.VIDEO_RESUME_TIME, time);
-//            }
+            if(MediaDatabase.getInstance().mediaItemExists(mLocation)) {
+                MediaDatabase.getInstance().updateMedia(
+                        mLocation,
+                        MediaDatabase.mediaColumn.MEDIA_TIME,
+                        time);
+            } else {
+                // Video file not in media library, store time just for onResume()
+                editor.putLong(PreferencesActivity.VIDEO_RESUME_TIME, time);
+            }
         }
         // Save selected subtitles
         String subtitleList_serialized = null;
@@ -460,7 +478,7 @@ public class VideoPlayerActivity extends Activity implements IVideoPlayer {
                 subtitleList_serialized = bos.toString();
             } catch(IOException e) {}
         }
-//        editor.putString(PreferencesActivity.VIDEO_SUBTITLE_FILES, subtitleList_serialized);
+        editor.putString(PreferencesActivity.VIDEO_SUBTITLE_FILES, subtitleList_serialized);
 
         editor.commit();
         AudioServiceController.getInstance().unbindAudioService(this);
@@ -1367,10 +1385,10 @@ public class VideoPlayerActivity extends Activity implements IVideoPlayer {
                     }
                     if(trackID < 0) return;
 
-//                    MediaDatabase.getInstance().updateMedia(
-//                            mLocation,
-//                            MediaDatabase.mediaColumn.MEDIA_AUDIOTRACK,
-//                            trackID);
+                    MediaDatabase.getInstance().updateMedia(
+                            mLocation,
+                            MediaDatabase.mediaColumn.MEDIA_AUDIOTRACK,
+                            trackID);
                     mLibVLC.setAudioTrack(trackID);
                     dialog.dismiss();
                 }
@@ -1414,10 +1432,10 @@ public class VideoPlayerActivity extends Activity implements IVideoPlayer {
                     }
                     if(trackID < -1) return;
 
-//                    MediaDatabase.getInstance().updateMedia(
-//                            mLocation,
-//                            MediaDatabase.mediaColumn.MEDIA_SPUTRACK,
-//                            trackID);
+                    MediaDatabase.getInstance().updateMedia(
+                            mLocation,
+                            MediaDatabase.mediaColumn.MEDIA_SPUTRACK,
+                            trackID);
                     mLibVLC.setSpuTrack(trackID);
                     dialog.dismiss();
                 }
@@ -1619,7 +1637,7 @@ public class VideoPlayerActivity extends Activity implements IVideoPlayer {
                 dimStatusBar(false);
             }
             mOverlayProgress.setVisibility(View.VISIBLE);
-            if (mPresentation != null) mOverlayBackground.setVisibility(View.VISIBLE);
+//            if (mPresentation != null) mOverlayBackground.setVisibility(View.VISIBLE);
         }
         Message msg = mHandler.obtainMessage(FADE_OUT);
         if (timeout != 0) {
@@ -1637,7 +1655,7 @@ public class VideoPlayerActivity extends Activity implements IVideoPlayer {
         if (mShowing) {
             mHandler.removeMessages(SHOW_PROGRESS);
             Log.i(TAG, "remove View!");
-            if (mOverlayTips != null) mOverlayTips.setVisibility(View.INVISIBLE);
+//            if (mOverlayTips != null) mOverlayTips.setVisibility(View.INVISIBLE);
             if (!fromUser && !mIsLocked) {
                 mOverlayHeader.startAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_out));
                 mOverlayOption.startAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_out));
@@ -1646,8 +1664,8 @@ public class VideoPlayerActivity extends Activity implements IVideoPlayer {
                 mMenu.startAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_out));
             }
             if (mPresentation != null) {
-                mOverlayBackground.startAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_out));
-                mOverlayBackground.setVisibility(View.INVISIBLE);
+//                mOverlayBackground.startAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_out));
+//                mOverlayBackground.setVisibility(View.INVISIBLE);
             }
             mOverlayHeader.setVisibility(View.INVISIBLE);
             mOverlayOption.setVisibility(View.INVISIBLE);
@@ -1699,11 +1717,11 @@ public class VideoPlayerActivity extends Activity implements IVideoPlayer {
         }
         int time = (int) mLibVLC.getTime();
         int length = (int) mLibVLC.getLength();
-//        if (length == 0) {
-//            Media media = MediaDatabase.getInstance().getMedia(mLocation);
-//            if (media != null)
-//                length = (int) media.getLength();
-//        }
+        if (length == 0) {
+            Media media = MediaDatabase.getInstance().getMedia(mLocation);
+            if (media != null)
+                length = (int) media.getLength();
+        }
 
         // Update all view elements
         boolean isSeekable = mEnableJumpButtons && length > 0;
@@ -1960,46 +1978,46 @@ public class VideoPlayerActivity extends Activity implements IVideoPlayer {
 
         if (mLocation != null && mLocation.length() > 0 && !dontParse) {
             // restore last position
-//            Media media = MediaDatabase.getInstance().getMedia(mLocation);
-//            if(media != null) {
-//                // in media library
-//                if(media.getTime() > 0 && !fromStart)
-//                    mLibVLC.setTime(media.getTime());
-//                // Consume fromStart option after first use to prevent
-//                // restarting again when playback is paused.
-//                getIntent().putExtra("fromStart", false);
-//
-//                mLastAudioTrack = media.getAudioTrack();
-//                mLastSpuTrack = media.getSpuTrack();
-//            } else {
-//                // not in media library
-//                long rTime = mSettings.getLong(PreferencesActivity.VIDEO_RESUME_TIME, -1);
-//                Editor editor = mSettings.edit();
-//                editor.putLong(PreferencesActivity.VIDEO_RESUME_TIME, -1);
-//                editor.commit();
-//                if(rTime > 0)
-//                    mLibVLC.setTime(rTime);
-//
-//                if(intentPosition > 0)
-//                    mLibVLC.setTime(intentPosition);
-//            }
+            Media media = MediaDatabase.getInstance().getMedia(mLocation);
+            if(media != null) {
+                // in media library
+                if(media.getTime() > 0 && !fromStart)
+                    mLibVLC.setTime(media.getTime());
+                // Consume fromStart option after first use to prevent
+                // restarting again when playback is paused.
+                getIntent().putExtra("fromStart", false);
+
+                mLastAudioTrack = media.getAudioTrack();
+                mLastSpuTrack = media.getSpuTrack();
+            } else {
+                // not in media library
+                long rTime = mSettings.getLong(PreferencesActivity.VIDEO_RESUME_TIME, -1);
+                Editor editor = mSettings.edit();
+                editor.putLong(PreferencesActivity.VIDEO_RESUME_TIME, -1);
+                editor.commit();
+                if(rTime > 0)
+                    mLibVLC.setTime(rTime);
+
+                if(intentPosition > 0)
+                    mLibVLC.setTime(intentPosition);
+            }
 
             // Get possible subtitles
-//            String subtitleList_serialized = mSettings.getString(PreferencesActivity.VIDEO_SUBTITLE_FILES, null);
-//            ArrayList<String> prefsList = new ArrayList<String>();
-//            if(subtitleList_serialized != null) {
-//                ByteArrayInputStream bis = new ByteArrayInputStream(subtitleList_serialized.getBytes());
-//                try {
-//                    ObjectInputStream ois = new ObjectInputStream(bis);
-//                    prefsList = (ArrayList<String>)ois.readObject();
-//                } catch(ClassNotFoundException e) {}
-//                  catch (StreamCorruptedException e) {}
-//                  catch (IOException e) {}
-//            }
-//            for(String x : prefsList){
-//                if(!mSubtitleSelectedFiles.contains(x))
-//                    mSubtitleSelectedFiles.add(x);
-//             }
+            String subtitleList_serialized = mSettings.getString(PreferencesActivity.VIDEO_SUBTITLE_FILES, null);
+            ArrayList<String> prefsList = new ArrayList<String>();
+            if(subtitleList_serialized != null) {
+                ByteArrayInputStream bis = new ByteArrayInputStream(subtitleList_serialized.getBytes());
+                try {
+                    ObjectInputStream ois = new ObjectInputStream(bis);
+                    prefsList = (ArrayList<String>)ois.readObject();
+                } catch(ClassNotFoundException e) {}
+                  catch (StreamCorruptedException e) {}
+                  catch (IOException e) {}
+            }
+            for(String x : prefsList){
+                if(!mSubtitleSelectedFiles.contains(x))
+                    mSubtitleSelectedFiles.add(x);
+             }
 
             // Get the title
             try {
@@ -2235,11 +2253,11 @@ public class VideoPlayerActivity extends Activity implements IVideoPlayer {
     }
 
     public void onClickOverlayTips(View v) {
-        mOverlayTips.setVisibility(View.GONE);
+//        mOverlayTips.setVisibility(View.GONE);
     }
 
     public void onClickDismissTips(View v) {
-        mOverlayTips.setVisibility(View.GONE);
+//        mOverlayTips.setVisibility(View.GONE);
         Editor editor = mSettings.edit();
         editor.putBoolean(PREF_TIPS_SHOWN, true);
         editor.commit();

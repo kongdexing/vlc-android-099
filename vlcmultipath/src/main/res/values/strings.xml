@@ -259,4 +259,51 @@ YUV: 性能最高，但并非在所有设备上都可用。仅限 Android 2.3 �
     <string name="restart_vlc">重新启动 VLC</string>
     <string name="send_log">发送日志</string>
     <string name="sending_log">正在发送日志…</string>
+
+    <string name="vout_opengles2" translatable="false">OpenGL ES 2.0</string>
+
+    <string-array name="aouts_froyo">
+        <item>@string/aout_audiotrack_java</item>
+        <item>@string/aout_audiotrack</item>
+    </string-array>
+    <string-array name="aouts">
+        <item>@string/aout_audiotrack_java</item>
+        <item>@string/aout_audiotrack</item>
+        <item>@string/aout_opensles</item>
+    </string-array>
+    <string-array name="aouts_values_froyo" translatable="false">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="aouts_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="chroma_formats_values" translatable="false">
+        <item>RV32</item>
+        <item>RV16</item>
+        <item>YV12</item>
+    </string-array>
+
+    <string-array name="chroma_formats" translatable="false">
+        <item>RGB 32-bit</item>
+        <item>RGB 16-bit</item>
+        <item>YUV</item>
+    </string-array>
+    <string-array name="vouts_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="vouts_values_froyo" translatable="false">
+        <item>0</item>
+    </string-array>
+    <string-array name="vouts">
+        <item>@string/vout_android_surface</item>
+        <item>@string/vout_opengles2</item>
+    </string-array>
+    <string-array name="vouts_froyo">
+        <item>@string/vout_android_surface</item>
+    </string-array>
 </resources>

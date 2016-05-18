@@ -161,7 +161,7 @@ public class CommonDialogs {
             equalizer.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    activity.showSecondaryFragment("equalizer");
+//                    activity.showSecondaryFragment("equalizer");
                     dialog.dismiss();
                 }
             });

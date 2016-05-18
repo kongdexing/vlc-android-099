@@ -269,10 +269,10 @@ public class VideoGridFragment extends SherlockGridFragment implements ISortable
         Media media = (Media) getListAdapter().getItem(position);
         if (media instanceof MediaGroup) {
             MainActivity activity = (MainActivity)getActivity();
-            VideoGridFragment frag = (VideoGridFragment)activity.showSecondaryFragment("videoGroupList");
-            if (frag != null) {
-                frag.setGroup(media.getTitle());
-            }
+//            VideoGridFragment frag = (VideoGridFragment)activity.showSecondaryFragment("videoGroupList");
+//            if (frag != null) {
+//                frag.setGroup(media.getTitle());
+//            }
         }
         else
             playVideo(media, false);
@@ -299,10 +299,10 @@ public class VideoGridFragment extends SherlockGridFragment implements ISortable
             return true;
         case R.id.video_list_info:
             MainActivity activity = (MainActivity)getActivity();
-            MediaInfoFragment frag = (MediaInfoFragment)activity.showSecondaryFragment("mediaInfo");
-            if (frag != null) {
-                frag.setMediaLocation(media.getLocation());
-            }
+//            MediaInfoFragment frag = (MediaInfoFragment)activity.showSecondaryFragment("mediaInfo");
+//            if (frag != null) {
+//                frag.setMediaLocation(media.getLocation());
+//            }
             return true;
         case R.id.video_list_delete:
             AlertDialog alertDialog = CommonDialogs.deleteMedia(

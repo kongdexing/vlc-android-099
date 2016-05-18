@@ -27,6 +27,7 @@ import android.content.res.Resources;
 import android.preference.PreferenceManager;
 import android.util.Log;
 
+import org.videolan.vlc.MediaDatabase;
 import org.videolan.vlc.util.AudioUtil;
 import org.videolan.vlc.util.BitmapCache;
 
@@ -76,7 +77,7 @@ public class VLCApplication extends Application {
         instance = this;
 
         // Initialize the database soon enough to avoid any race condition and crash
-//        MediaDatabase.getInstance();
+        MediaDatabase.getInstance();
         // Prepare cache folder constants
         AudioUtil.prepareCacheFolder(this);
     }
